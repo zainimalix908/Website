@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="color-scheme" content="dark" />
+<meta name="color-scheme" content="light" />
 <meta name="description" content="Best SEO services for local businesses: Zain Naseer — Local SEO, link building, content, Pinterest &amp; Amazon affiliate. More calls &amp; sales. Free audit." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://zainimalix908.github.io/Website/" />
-<meta name="theme-color" content="#0B1220" />
+<meta name="theme-color" content="#F7FAFF" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://zainimalix908.github.io/Website/" />
 <meta property="og:site_name" content="Zain Naseer — SEO & Local Business Growth" />
 <meta property="og:title" content="Best SEO Services for Local Businesses | Zain Naseer — SEO Expert" />
-<meta property="og:description" content="Best SEO services for local businesses: Zain Naseer — Local SEO, link building, content, Pinterest & Amazon affiliate. More calls & sales. Free audit." />
+<meta property="og:description" content="Best SEO services for local businesses: Zain Naseer — Local SEO, link building, content, Pinterest & Amazon affiliate. More calls &amp; sales. Free audit." />
 <meta property="og:image" content="https://zainimalix908.github.io/Website/assets/og-cover.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
@@ -20,7 +20,7 @@
 <meta property="og:image:alt" content="Zain Naseer — best SEO services for local businesses: Local SEO, link building, content writing, Pinterest marketing and Amazon affiliate services" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Best SEO Services for Local Businesses | Zain Naseer — SEO Expert" />
-<meta name="twitter:description" content="Best SEO services for local businesses: Zain Naseer — Local SEO, link building, content, Pinterest & Amazon affiliate. More calls & sales. Free audit." />
+<meta name="twitter:description" content="Best SEO services for local businesses: Zain Naseer — Local SEO, link building, content, Pinterest & Amazon affiliate. More calls &amp; sales. Free audit." />
 <meta name="twitter:image" content="https://zainimalix908.github.io/Website/assets/og-cover.png" />
 <meta name="twitter:image:alt" content="Zain Naseer — best SEO services for local businesses: Local SEO, link building, content writing, Pinterest marketing and Amazon affiliate services" />
 <link rel="icon" href="data:," />
@@ -84,167 +84,193 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0B1220; --surface:#131F33; --card:#192942; --card2:#16243A;
-  --blue:#4D8DFF; --teal:#35C5B1; --text:#F4F7FC; --muted:#AFBED3; --muted2:#8FA3BE;
-  --border:#2D405A; --border2:#223650;
-  --radius:18px; --radius-sm:12px;
-  --shadow:0 18px 40px rgba(0,0,0,.35);
+  --bg:#F7FAFF; --white:#FFFFFF; --alt:#EEF4FF;
+  --blue:#2F7DFF; --blue-dark:#1D63D8; --teal:#17B890; --teal-dark:#0C7A5F;
+  --ink:#12233B; --muted:#47607F; --muted2:#6B829E;
+  --border:#D9E4F2; --border2:#E4EDF8;
+  --radius:20px;
+  --shadow:0 10px 30px rgba(18,35,59,.08);
+  --shadow-lg:0 22px 48px rgba(18,35,59,.14);
+  --navy:#0E1B30;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth; scroll-padding-top:84px}
+html{scroll-behavior:smooth; scroll-padding-top:88px}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
-body{margin:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; font-size:16.5px; line-height:1.65; -webkit-font-smoothing:antialiased}
+html,body{overflow-x:clip}
+@supports not (overflow:clip){ html,body{overflow-x:hidden} }
+body{margin:0; background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; font-size:16.5px; line-height:1.65; -webkit-font-smoothing:antialiased}
 a{color:inherit}
 h1,h2,h3,h4{font-family:"Plus Jakarta Sans",Inter,system-ui,sans-serif; line-height:1.15; letter-spacing:-.02em; margin:0}
 img{max-width:100%; display:block}
 .wrap{max-width:1200px; margin:0 auto; padding:0 22px}
-.section{padding:84px 0}
-.section.alt{background:linear-gradient(180deg, rgba(77,141,255,.04), transparent 40%), var(--surface); border-top:1px solid var(--border2); border-bottom:1px solid var(--border2)}
-.kicker{display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--teal); margin-bottom:14px}
+.section{padding:88px 0; background:var(--white)}
+.section.alt{background:var(--alt)}
+.section.plain{background:var(--bg)}
+.kicker{display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--teal-dark); margin-bottom:14px}
 .kicker::before{content:""; width:22px; height:2px; background:var(--teal); display:inline-block; border-radius:2px}
 .section-head{max-width:720px; margin-bottom:36px}
 .section-head h2{font-size:clamp(28px,4vw,40px); font-weight:800}
 .section-head p{color:var(--muted); margin:12px 0 0; font-size:17px}
+.page{display:none}
+.page.active{display:block}
 
 /* Header */
-header{position:sticky; top:0; z-index:50; background:rgba(11,18,32,.92); backdrop-filter:blur(14px); border-bottom:1px solid var(--border2)}
-.header-in{display:flex; align-items:center; justify-content:space-between; gap:16px; height:68px}
+header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.94); backdrop-filter:blur(14px); border-bottom:1px solid var(--border)}
+.header-in{display:flex; align-items:center; justify-content:space-between; gap:16px; height:70px}
 .logo{display:flex; align-items:center; gap:12px; text-decoration:none; font-family:"Plus Jakarta Sans",sans-serif; font-weight:800; font-size:19px; letter-spacing:-.02em}
-.logo-mark{width:38px; height:38px; border-radius:10px; background:linear-gradient(135deg,var(--blue),var(--teal)); display:grid; place-items:center; font-size:15px; color:#08101E; flex:none}
+.logo-mark{width:38px; height:38px; border-radius:10px; background:linear-gradient(135deg,var(--blue),var(--teal)); display:grid; place-items:center; font-size:15px; color:#fff; flex:none}
 .logo small{display:block; font-family:Inter,sans-serif; font-weight:500; font-size:11px; color:var(--muted); letter-spacing:.02em; margin-top:1px}
-nav.main{display:flex; gap:6px; align-items:center}
-nav.main a{color:var(--muted); text-decoration:none; font-size:14.5px; font-weight:500; padding:8px 12px; border-radius:999px}
-nav.main a:hover{color:var(--text); background:rgba(255,255,255,.05)}
-.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:999px; padding:12px 20px; font-weight:600; font-size:15px; text-decoration:none; border:1px solid transparent; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease, background .18s ease; white-space:nowrap}
+nav.main{display:flex; gap:4px; align-items:center}
+nav.main a{color:var(--muted); text-decoration:none; font-size:15px; font-weight:600; padding:10px 14px; border-radius:999px; min-height:44px; display:inline-flex; align-items:center}
+nav.main a:hover{color:var(--ink); background:var(--alt)}
+nav.main a.active{color:#fff; background:var(--blue)}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:999px; padding:12px 20px; font-weight:600; font-size:15px; text-decoration:none; border:1px solid transparent; cursor:pointer; min-height:44px; transition:transform .18s ease, box-shadow .18s ease, background .18s ease; white-space:nowrap}
 .btn:active{transform:translateY(1px)}
-.btn-primary{background:var(--blue); color:#fff; box-shadow:0 10px 24px rgba(77,141,255,.28)}
-.btn-primary:hover{background:#3B7EF5; transform:translateY(-1px)}
-.btn-ghost{background:transparent; color:var(--text); border-color:var(--border)}
-.btn-ghost:hover{border-color:var(--blue); background:rgba(77,141,255,.08)}
-.btn-teal{background:var(--teal); color:#06231F}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.btn-primary{background:linear-gradient(135deg,#4A8DFF,var(--blue)); color:#fff; box-shadow:0 10px 24px rgba(47,125,255,.30)}
+.btn-primary:hover{background:linear-gradient(135deg,#3E83F5,var(--blue-dark)); box-shadow:0 14px 30px rgba(47,125,255,.38)}
+.btn-ghost{background:#fff; color:var(--ink); border-color:var(--border)}
+.btn-ghost:hover{border-color:var(--blue); background:var(--alt)}
+.btn-teal{background:var(--teal); color:#04382C; box-shadow:0 10px 24px rgba(23,184,144,.25)}
 .btn-teal:hover{filter:brightness(1.05)}
 .btn-sm{padding:9px 16px; font-size:14px}
-.menu-btn{display:none; width:44px; height:44px; border-radius:10px; border:1px solid var(--border); background:var(--surface); color:var(--text); align-items:center; justify-content:center; cursor:pointer}
-.mobile-nav{display:none; border-top:1px solid var(--border2); padding:12px 0 16px}
-.mobile-nav a{display:block; padding:10px 4px; color:var(--muted); text-decoration:none; font-weight:500}
+.btn-lg{padding:15px 26px; font-size:16px}
+.btn-whatsapp{background:#25D366; color:#052E1B; box-shadow:0 10px 24px rgba(37,211,102,.28)}
+.btn-whatsapp:hover{filter:brightness(1.07)}
+.menu-btn{display:none; width:44px; height:44px; border-radius:10px; border:1px solid var(--border); background:#fff; color:var(--ink); align-items:center; justify-content:center; cursor:pointer; font-size:18px}
+.mobile-nav{display:none; border-top:1px solid var(--border2); padding:10px 0 14px; background:#fff}
+.mobile-nav a{display:flex; align-items:center; min-height:44px; padding:10px 6px; color:var(--muted); text-decoration:none; font-weight:600; border-radius:10px}
+.mobile-nav a.active{color:var(--blue-dark); background:var(--alt)}
 .mobile-nav.open{display:block}
 @media(max-width:860px){ nav.main{display:none} .menu-btn{display:inline-flex} .header-cta{display:none} }
 
 /* Hero */
-.hero{position:relative; overflow:hidden; padding:64px 0 72px; background:
-  radial-gradient(700px 380px at 85% -10%, rgba(77,141,255,.22), transparent 60%),
-  radial-gradient(560px 340px at 5% 110%, rgba(53,197,177,.14), transparent 60%), var(--bg)}
-.hero-grid{display:grid; grid-template-columns:1.12fr .88fr; gap:48px; align-items:center}
+.hero{position:relative; overflow:hidden; padding:88px 0 92px; background:linear-gradient(180deg,#FFFFFF 0%, #EAF2FF 58%, #F7FAFF 100%)}
+.hero::before{content:""; position:absolute; width:560px; height:560px; border-radius:50%; right:-180px; top:-220px; background:radial-gradient(circle, rgba(47,125,255,.16), transparent 65%); pointer-events:none}
+.hero::after{content:""; position:absolute; width:460px; height:460px; border-radius:50%; left:-160px; bottom:-240px; background:radial-gradient(circle, rgba(23,184,144,.14), transparent 65%); pointer-events:none}
+.hero-grid{display:grid; grid-template-columns:1.12fr .88fr; gap:48px; align-items:center; position:relative; z-index:1}
 @media(max-width:900px){ .hero-grid{grid-template-columns:1fr} }
-.eyebrow{display:inline-flex; gap:8px; flex-wrap:wrap; align-items:center; background:rgba(77,141,255,.10); border:1px solid rgba(77,141,255,.30); color:#C7DCFF; padding:7px 12px; border-radius:999px; font-size:13px; font-weight:600}
-.hero h1{font-size:clamp(34px,5.2vw,56px); font-weight:800; margin:20px 0 0}
+.eyebrow{display:inline-flex; gap:8px; flex-wrap:wrap; align-items:center; background:#fff; border:1px solid rgba(47,125,255,.35); color:var(--blue-dark); padding:7px 12px; border-radius:999px; font-size:13px; font-weight:600; box-shadow:var(--shadow)}
+.hero h1{font-size:clamp(40px,5.8vw,64px); font-weight:800; margin:20px 0 0; letter-spacing:-.025em}
 .hero h1 em{font-style:normal; color:var(--blue)}
-.hero h1 .teal{color:var(--teal)}
-.hero-sub{color:var(--muted); font-size:18px; margin:18px 0 0; max-width:560px}
+.hero h1 .teal{color:var(--teal-dark)}
+.hero-sub{color:var(--muted); font-size:19px; margin:18px 0 0; max-width:560px}
 .hero-ctas{display:flex; gap:12px; flex-wrap:wrap; margin-top:28px}
-.cred-line{display:flex; flex-wrap:wrap; gap:10px 18px; margin-top:26px; color:var(--muted); font-size:14px}
-.cred-line span{display:inline-flex; gap:7px; align-items:center}
-.cred-line b{color:var(--text)}
-.dot{width:6px; height:6px; border-radius:50%; background:var(--teal); display:inline-block}
-.hero-card{background:linear-gradient(180deg, var(--card), var(--surface)); border:1px solid var(--border); border-radius:22px; padding:22px; box-shadow:var(--shadow); position:relative}
-.avatar{width:84px; height:84px; border-radius:20px; background:linear-gradient(135deg,var(--blue),var(--teal)); display:grid; place-items:center; font-family:"Plus Jakarta Sans",sans-serif; font-weight:800; font-size:30px; color:#08101E}
+.hero-signals{display:flex; flex-wrap:wrap; gap:9px; margin-top:22px}
+.hsig{display:inline-flex; align-items:center; gap:7px; font-size:13.5px; font-weight:700; padding:9px 14px; border-radius:999px; background:rgba(23,184,144,.10); border:1px solid rgba(23,184,144,.4); color:var(--teal-dark)}
+.hsig::before{content:"✓"; color:var(--teal-dark); font-weight:800; font-size:12.5px}
+.trust-badges{display:flex; flex-wrap:wrap; gap:9px; margin-top:14px}
+.tbadge{display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; padding:8px 13px; border-radius:999px; background:#fff; border:1px solid var(--border); color:var(--ink)}
+.tbadge::before{content:"✓"; color:var(--teal-dark); font-weight:800; font-size:12px}
+.hero-card{background:#fff; border:1px solid var(--border); border-radius:22px; padding:24px; box-shadow:var(--shadow-lg); position:relative}
+.hero-card::before{content:""; position:absolute; top:0; left:0; right:0; height:3px; border-radius:22px 22px 0 0; background:linear-gradient(90deg,var(--blue),var(--teal))}
+.avatar{width:84px; height:84px; border-radius:20px; background:linear-gradient(135deg,var(--blue),var(--teal)); display:grid; place-items:center; font-family:"Plus Jakarta Sans",sans-serif; font-weight:800; font-size:30px; color:#fff; box-shadow:0 10px 26px rgba(47,125,255,.30)}
 .hero-card-top{display:flex; gap:16px; align-items:center}
 .hero-card-top h3{font-size:20px}
 .hero-card-top p{margin:4px 0 0; color:var(--muted); font-size:14px; line-height:1.5}
 .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:18px}
-.chip{font-size:12.5px; font-weight:600; padding:7px 10px; border-radius:999px; background:rgba(255,255,255,.05); border:1px solid var(--border); color:#D7E3F5}
+.chip{font-size:12.5px; font-weight:600; padding:7px 10px; border-radius:999px; background:var(--alt); border:1px solid var(--border); color:#33486B}
 .mini-list{margin:18px 0 0; padding:0; list-style:none; display:grid; gap:10px}
 .mini-list li{display:flex; gap:10px; color:var(--muted); font-size:14.5px}
-.mini-list li::before{content:"✓"; width:22px; height:22px; flex:none; border-radius:50%; background:rgba(53,197,177,.15); color:var(--teal); display:grid; place-items:center; font-size:12px; font-weight:800; margin-top:1px}
-.avail{margin-top:18px; padding:12px 14px; border-radius:12px; background:rgba(53,197,177,.08); border:1px solid rgba(53,197,177,.28); font-size:14px; color:#CFF7F0; display:flex; gap:10px; align-items:center}
-.avail i{width:9px; height:9px; border-radius:50%; background:var(--teal); flex:none; box-shadow:0 0 0 5px rgba(53,197,177,.15)}
+.mini-list li::before{content:"✓"; width:22px; height:22px; flex:none; border-radius:50%; background:rgba(23,184,144,.14); color:var(--teal-dark); display:grid; place-items:center; font-size:12px; font-weight:800; margin-top:1px}
+.avail{margin-top:18px; padding:12px 14px; border-radius:12px; background:rgba(23,184,144,.08); border:1px solid rgba(23,184,144,.35); font-size:14px; color:#0B4A3A; display:flex; gap:10px; align-items:center}
+.avail i{width:9px; height:9px; border-radius:50%; background:var(--teal); flex:none; box-shadow:0 0 0 5px rgba(23,184,144,.15)}
+@keyframes riseIn{from{opacity:0; transform:translateY(16px)} to{opacity:1; transform:none}}
+.hero-grid > div:first-child{animation:riseIn .7s ease both}
+.hero-card{animation:riseIn .7s ease .12s both}
+@media (prefers-reduced-motion: reduce){ .hero-grid > div:first-child, .hero-card{animation:none} }
 
 /* Trust strip */
-.trust{border-top:1px solid var(--border2); border-bottom:1px solid var(--border2); background:rgba(255,255,255,.02)}
+.trust{border-top:1px solid var(--border2); border-bottom:1px solid var(--border2); background:#fff}
 .trust-in{display:flex; flex-wrap:wrap; gap:10px 28px; align-items:center; justify-content:space-between; padding:18px 0; color:var(--muted); font-size:14px; font-weight:600}
-.trust-in strong{color:var(--text); font-family:"Plus Jakarta Sans",sans-serif}
+.trust-in strong{color:var(--ink); font-family:"Plus Jakarta Sans",sans-serif}
 
 /* Cards grid */
 .grid{display:grid; gap:18px}
 .grid-2{grid-template-columns:repeat(2,1fr)} .grid-3{grid-template-columns:repeat(3,1fr)} .grid-4{grid-template-columns:repeat(4,1fr)}
 @media(max-width:980px){ .grid-4{grid-template-columns:repeat(2,1fr)} .grid-3{grid-template-columns:repeat(2,1fr)} }
 @media(max-width:640px){ .grid-2,.grid-3,.grid-4{grid-template-columns:1fr} }
-.card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:24px; transition:transform .18s ease, border-color .18s ease}
-.card:hover{transform:translateY(-3px); border-color:rgba(77,141,255,.55)}
+.card{background:#fff; border:1px solid var(--border); border-radius:22px; padding:24px; box-shadow:var(--shadow); transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease}
+.card:hover{transform:translateY(-5px); border-color:rgba(47,125,255,.55); box-shadow:var(--shadow-lg)}
 .card h3{font-size:18px; margin:14px 0 8px}
 .card p{color:var(--muted); margin:0; font-size:15px}
-.icon{width:46px; height:46px; border-radius:13px; display:grid; place-items:center; background:rgba(77,141,255,.12); border:1px solid rgba(77,141,255,.25); font-size:22px}
-.icon.teal{background:rgba(53,197,177,.12); border-color:rgba(53,197,177,.28)}
-.problem-num{font-size:13px; font-weight:800; color:var(--blue); letter-spacing:.08em}
-.problem-card p strong{color:var(--text)}
+.icon{width:46px; height:46px; border-radius:13px; display:grid; place-items:center; background:rgba(47,125,255,.10); border:1px solid rgba(47,125,255,.25); font-size:22px}
+.icon.teal{background:rgba(23,184,144,.12); border-color:rgba(23,184,144,.3)}
+.problem-num{font-size:13px; font-weight:800; color:var(--blue-dark); letter-spacing:.08em}
+.problem-card p strong{color:var(--ink)}
 
 /* Services */
 .service-card{display:flex; flex-direction:column}
 .service-card ul{margin:14px 0 0; padding:0; list-style:none; display:grid; gap:8px}
 .service-card li{color:var(--muted); font-size:14.5px; display:flex; gap:8px}
-.service-card li::before{content:"—"; color:var(--teal); font-weight:700}
+.service-card li::before{content:"—"; color:var(--teal-dark); font-weight:700}
 .service-link{margin-top:auto; padding-top:18px}
-.service-link a{color:var(--blue); text-decoration:none; font-weight:600; font-size:14.5px}
+.service-link a{color:var(--blue-dark); text-decoration:none; font-weight:600; font-size:14.5px}
 .service-link a:hover{text-decoration:underline}
-.tag{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:5px 8px; border-radius:999px; background:rgba(77,141,255,.12); color:#BFD6FF; border:1px solid rgba(77,141,255,.25)}
-.tag.teal{background:rgba(53,197,177,.12); color:#B9F2EA; border-color:rgba(53,197,177,.25)}
+.service-card .icon{transition:transform .22s ease}
+.service-card:hover .icon{transform:translateY(-2px) scale(1.05)}
+.tag{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:5px 8px; border-radius:999px; background:rgba(47,125,255,.10); color:var(--blue-dark); border:1px solid rgba(47,125,255,.28)}
+.tag.teal{background:rgba(23,184,144,.12); color:var(--teal-dark); border-color:rgba(23,184,144,.3)}
+.answer-block{max-width:860px; background:linear-gradient(160deg, rgba(47,125,255,.09), rgba(23,184,144,.07)); border:1px solid rgba(47,125,255,.35); border-radius:18px; padding:22px 24px; margin-bottom:30px}
+.answer-block h3{font-size:18px; margin-bottom:8px}
+.answer-block p{color:var(--muted); margin:0; font-size:15.5px}
+.answer-block p strong{color:var(--ink)}
+
+/* Overview cards (Home) */
+.overview-card{display:flex; flex-direction:column}
+.overview-card .go{margin-top:auto; padding-top:16px}
+.overview-card .go a{color:var(--blue-dark); font-weight:700; text-decoration:none; font-size:14.5px}
+.overview-card .go a:hover{text-decoration:underline}
 
 /* Process */
 .process{display:grid; grid-template-columns:repeat(5,1fr); gap:14px}
 @media(max-width:980px){ .process{grid-template-columns:repeat(2,1fr)} }
 @media(max-width:560px){ .process{grid-template-columns:1fr} }
-.step{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; position:relative}
+.step{background:#fff; border:1px solid var(--border); border-radius:20px; padding:20px; box-shadow:var(--shadow); transition:transform .22s ease, border-color .22s ease}
+.step:hover{transform:translateY(-3px); border-color:rgba(47,125,255,.5)}
 .step-num{width:36px; height:36px; border-radius:50%; background:var(--blue); color:#fff; display:grid; place-items:center; font-weight:800; font-family:"Plus Jakarta Sans",sans-serif; font-size:15px}
 .step h3{font-size:16.5px; margin:14px 0 6px}
 .step p{color:var(--muted); font-size:14.5px; margin:0}
 
-/* Work placeholders */
-.work-note{background:rgba(77,141,255,.07); border:1px dashed rgba(77,141,255,.45); border-radius:16px; padding:18px 20px; color:var(--muted); margin-bottom:22px; font-size:15px}
-.work-note strong{color:var(--text)}
-.slot{background:linear-gradient(180deg, rgba(255,255,255,.02), transparent); border:1.5px dashed var(--border); border-radius:18px; padding:18px; min-height:280px; display:flex; flex-direction:column}
-.slot-media{height:130px; border-radius:12px; border:1px dashed var(--border); background:repeating-linear-gradient(45deg, rgba(255,255,255,.02) 0 10px, transparent 10px 20px); display:grid; place-items:center; color:var(--muted2); font-size:36px}
+/* Project / sample slots */
+.work-note{background:#EAF1FC; border:1px dashed rgba(47,125,255,.45); border-radius:16px; padding:18px 20px; color:var(--muted); margin-bottom:22px; font-size:15px}
+.work-note strong{color:var(--ink)}
+.slot{background:#fff; border:1px solid var(--border); border-radius:22px; padding:18px; min-height:280px; display:flex; flex-direction:column; box-shadow:var(--shadow); transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease}
+.slot:hover{transform:translateY(-5px); border-color:rgba(47,125,255,.55); box-shadow:var(--shadow-lg)}
 .slot h3{font-size:17px; margin:16px 0 6px}
 .slot p{color:var(--muted); font-size:14.5px; margin:0}
 .slot-meta{margin-top:auto; padding-top:16px; display:flex; gap:8px; flex-wrap:wrap}
-.slot-badge{font-size:12px; font-weight:700; padding:6px 9px; border-radius:999px; background:#22314D; color:#C7D6EE; border:1px solid var(--border)}
-.slot-badge.owner{background:rgba(53,197,177,.13); color:#B9F2EA; border-color:rgba(53,197,177,.35)}
-.slot-badge.rank{background:rgba(77,141,255,.12); color:#BFD6FF; border-color:rgba(77,141,255,.3)}
-.slot.live{border:1.5px solid var(--border); background:linear-gradient(180deg, var(--card), var(--card2))}
-.slot.live:hover{border-color:rgba(77,141,255,.55)}
-.slot-media.live-media{border:1px solid var(--border); color:#fff; font-family:"Plus Jakarta Sans",sans-serif; font-weight:800; font-size:30px; letter-spacing:.01em; text-shadow:0 2px 10px rgba(0,0,0,.35)}
-.slot-media.live-media small{display:block; font-family:Inter,sans-serif; font-weight:600; font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; opacity:.92; margin-top:6px; text-shadow:none}
-.media-att{background:linear-gradient(135deg,#2F6BD8,#35C5B1)}
-.media-bible{background:linear-gradient(135deg,#7A5C1E,#C99B2F 55%,#35C5B1)}
-.media-elf{background:linear-gradient(135deg,#1E5B3F,#35C5B1 60%,#4D8DFF)}
+.slot-badge{font-size:12px; font-weight:700; padding:6px 9px; border-radius:999px; background:#E8EFF9; color:#33486B; border:1px solid var(--border)}
+.slot-badge.rank{background:rgba(47,125,255,.10); color:var(--blue-dark); border-color:rgba(47,125,255,.35)}
 .slot-link{margin-top:14px}
-.slot-link a{color:var(--blue); text-decoration:none; font-weight:600; font-size:14.5px}
+.slot-link a{color:var(--blue-dark); text-decoration:none; font-weight:600; font-size:14.5px}
 .slot-link a:hover{text-decoration:underline}
-.slot.sample{border:1.5px solid var(--border); background:linear-gradient(180deg, var(--card), var(--card2))}
-.slot-sample-flag{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:14px}
-.slot-badge.sample{background:rgba(255,176,66,.14); color:#FFD9A0; border-color:rgba(255,176,66,.45); text-transform:uppercase; letter-spacing:.05em}
-.sample-note{font-size:12.5px; color:var(--muted); font-weight:600}
-.media-dental{background:linear-gradient(135deg,#1F6F8B,#35C5B1)}
-.media-home{background:linear-gradient(135deg,#33536E,#2F6BD8)}
-.media-restaurant{background:linear-gradient(135deg,#8A3B2E,#C97A2F)}
+.slot-link a[data-service]{display:inline-flex; align-items:center; gap:7px; background:linear-gradient(135deg,#4A8DFF,var(--blue)); color:#fff; padding:11px 20px; border-radius:999px; font-size:14.5px; font-weight:700; box-shadow:0 10px 22px rgba(47,125,255,.30); transition:transform .18s ease, box-shadow .18s ease, filter .18s ease}
+.slot-link a[data-service]:hover{text-decoration:none; transform:translateY(-2px); filter:brightness(1.06); box-shadow:0 14px 28px rgba(47,125,255,.38)}
 .sample-did{margin-top:12px}
 .sample-did strong{display:block; font-family:"Plus Jakarta Sans",sans-serif; font-size:14px; margin-bottom:8px}
 .sample-did ul{margin:0; padding:0; list-style:none; display:grid; gap:7px}
 .sample-did li{color:var(--muted); font-size:14px; display:flex; gap:8px}
-.sample-did li::before{content:"✓"; color:var(--teal); font-weight:800; flex:none}
+.sample-did li::before{content:"✓"; color:var(--teal-dark); font-weight:800; flex:none}
 
-/* Project picture tiles — bright illustrated preview at the top of every project card */
-.pv{position:relative; height:190px; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,.16); color:#fff; flex:none}
-.pv-bg{position:absolute; inset:0}
+/* Project picture tiles */
+.pv{position:relative; height:210px; border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,.16); color:#fff; flex:none}
+.pv-bg{position:absolute; inset:0; filter:saturate(1.15) brightness(1.06); transition:transform .55s ease}
+.slot:hover .pv-bg{transform:scale(1.07); filter:saturate(1.22) brightness(1.1)}
 .pv-deco{position:absolute; border-radius:50%; background:rgba(255,255,255,.13); pointer-events:none}
 .pv-deco.d1{width:150px; height:150px; right:-48px; top:-66px}
 .pv-deco.d2{width:88px; height:88px; right:70px; bottom:-54px; background:rgba(255,255,255,.09)}
 .pv-in{position:relative; z-index:2; height:100%; display:flex; flex-direction:column; padding:14px 15px}
 .pv-top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px}
-.pv-emoji{font-size:37px; line-height:1; width:58px; height:58px; display:grid; place-items:center; background:rgba(255,255,255,.20); border:1px solid rgba(255,255,255,.42); border-radius:15px; box-shadow:0 8px 18px rgba(0,0,0,.18)}
+.pv-emoji{font-size:37px; line-height:1; width:58px; height:58px; display:grid; place-items:center; background:rgba(255,255,255,.20); border:1px solid rgba(255,255,255,.42); border-radius:15px; box-shadow:0 8px 18px rgba(0,0,0,.18); transition:transform .35s ease}
+.slot:hover .pv-emoji{transform:scale(1.1) rotate(-3deg)}
 .pv-mock{background:#fff; border-radius:10px; padding:7px 8px; box-shadow:0 12px 24px rgba(2,8,20,.35); line-height:0; flex:none}
 .pv-mock svg{display:block}
-.pv-title{margin-top:auto; font-family:"Plus Jakarta Sans",sans-serif; font-weight:800; font-size:20px; line-height:1.18; letter-spacing:-.01em; text-shadow:0 2px 10px rgba(0,0,0,.30)}
+.pv-title{margin-top:auto; font-family:"Plus Jakarta Sans",sans-serif; font-weight:800; font-size:22px; line-height:1.18; letter-spacing:-.01em; text-shadow:0 2px 10px rgba(0,0,0,.30)}
 .pv-sub{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; opacity:.94; margin-top:4px; text-shadow:0 1px 6px rgba(0,0,0,.25)}
+.pv-cta{position:absolute; left:50%; top:50%; z-index:3; transform:translate(-50%,-50%) scale(.9); background:rgba(7,15,28,.85); color:#fff; border:1px solid rgba(255,255,255,.55); padding:10px 18px; border-radius:999px; font-family:"Plus Jakarta Sans",sans-serif; font-weight:700; font-size:14.5px; white-space:nowrap; opacity:0; pointer-events:none; transition:opacity .25s ease, transform .25s ease}
+.slot:hover .pv-cta,.slot:focus-within .pv-cta{opacity:1; transform:translate(-50%,-50%) scale(1)}
+.slot:hover .pv{box-shadow:inset 0 0 0 999px rgba(6,14,28,.20)}
 .pv-att{background:linear-gradient(135deg,#2F6BD8,#35C5B1)}
 .pv-bible{background:linear-gradient(135deg,#9A6A1F,#D9A62E 55%,#35C5B1)}
 .pv-elf{background:linear-gradient(135deg,#1E7A4A,#35C5B1 60%,#4D8DFF)}
@@ -255,24 +281,63 @@ nav.main a:hover{color:var(--text); background:rgba(255,255,255,.05)}
 .pv-gads{background:linear-gradient(135deg,#1A73E8,#2F9E44)}
 .pv-meta{background:linear-gradient(135deg,#1877F2,#42B2F5)}
 .pv-etsy{background:linear-gradient(135deg,#E85D1F,#F59E0B)}
+.pv-keto{background:linear-gradient(135deg,#2E7D46,#35C5B1)}
+.pv-minecraft{background:linear-gradient(135deg,#4E7A1E,#7CB342 55%,#6D4C2F)}
+.pv-jackal{background:linear-gradient(135deg,#A9711F,#E8A33D)}
+.pv-hair{background:linear-gradient(135deg,#B23A72,#F28BB4)}
+.pv-dog{background:linear-gradient(135deg,#1F6F8B,#F2B33D)}
+.pv-cat{background:linear-gradient(135deg,#1C2027,#4A4436 60%,#C99B2F)}
 
-/* Why */
-.why-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:start}
-@media(max-width:860px){ .why-grid{grid-template-columns:1fr} }
+/* Writing samples */
+.sample-card{display:flex; flex-direction:column}
+.sample-card .tag{align-self:flex-start; margin-top:16px}
+.sample-card h3{font-size:18.5px; margin:10px 0 8px; line-height:1.3}
+.sample-card p{color:var(--muted); font-size:15px; margin:0}
+.writing-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:auto; padding-top:18px}
+.writing-actions .btn{flex:1 1 150px}
+.samples-note{max-width:820px; color:var(--muted); font-size:15px; margin-top:22px}
+.samples-note strong{color:var(--ink)}
+
+/* Why hire us / about */
+.why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+@media(max-width:980px){ .why-grid{grid-template-columns:repeat(2,1fr)} }
+@media(max-width:640px){ .why-grid{grid-template-columns:1fr} }
+.why-card .icon{margin-bottom:4px}
 .checklist{list-style:none; padding:0; margin:0; display:grid; gap:14px}
-.checklist li{display:flex; gap:12px; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px}
-.checklist li::before{content:"✓"; width:26px; height:26px; flex:none; border-radius:50%; background:rgba(53,197,177,.15); color:var(--teal); display:grid; place-items:center; font-weight:800; font-size:13px; margin-top:2px}
+.checklist li{display:flex; gap:12px; background:#fff; border:1px solid var(--border); border-radius:14px; padding:16px; box-shadow:var(--shadow)}
+.checklist li::before{content:"✓"; width:26px; height:26px; flex:none; border-radius:50%; background:rgba(23,184,144,.14); color:var(--teal-dark); display:grid; place-items:center; font-weight:800; font-size:13px; margin-top:2px}
 .checklist strong{display:block; font-family:"Plus Jakarta Sans",sans-serif; font-size:16px}
 .checklist span{color:var(--muted); font-size:14.5px}
-.about-box{background:var(--card); border:1px solid var(--border); border-radius:18px; padding:26px}
+.about-box{background:#fff; border:1px solid var(--border); border-radius:22px; padding:26px; box-shadow:var(--shadow)}
 .about-box h3{font-size:20px; margin-bottom:10px}
 .about-box p{color:var(--muted); margin:0 0 12px}
 .about-box p:last-child{margin-bottom:0}
 
+/* Timeline */
+.timeline{list-style:none; margin:0; padding:0; position:relative; max-width:760px}
+.timeline::before{content:""; position:absolute; left:19px; top:8px; bottom:8px; width:2px; background:linear-gradient(180deg,var(--blue),var(--teal))}
+.timeline li{position:relative; padding:0 0 26px 62px}
+.timeline li:last-child{padding-bottom:0}
+.tl-num{position:absolute; left:0; top:0; width:40px; height:40px; border-radius:50%; background:#fff; border:2px solid var(--blue); color:var(--blue-dark); display:grid; place-items:center; font-weight:800; font-family:"Plus Jakarta Sans",sans-serif; font-size:15px; box-shadow:var(--shadow)}
+.timeline h3{font-size:17px; margin:6px 0 4px}
+.timeline p{color:var(--muted); margin:0; font-size:15px}
+
+/* Strips */
+.strip-chips{display:flex; flex-wrap:wrap; gap:10px}
+.pchip{display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; padding:10px 16px; border-radius:999px; background:#fff; border:1px solid var(--border); color:var(--ink); box-shadow:var(--shadow); transition:transform .18s ease, border-color .18s ease}
+.pchip:hover{transform:translateY(-2px); border-color:rgba(47,125,255,.5)}
+.pchip::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--teal); flex:none}
+
+/* Featured work strip (Home) */
+.feat-card{display:flex; flex-direction:column}
+.feat-card h3{font-size:18px; margin:16px 0 6px}
+.feat-card p{color:var(--muted); font-size:14.5px; margin:0}
+.feat-card .slot-link{margin-top:auto}
+
 /* Packages */
 .pkg{display:flex; flex-direction:column}
 .pkg h3{font-size:19px}
-.pkg .price{margin-top:10px; font-family:"Plus Jakarta Sans",sans-serif; font-weight:700; color:var(--teal); font-size:15px}
+.pkg .price{margin-top:10px; font-family:"Plus Jakarta Sans",sans-serif; font-weight:700; color:var(--teal-dark); font-size:15px}
 .pkg ul{margin:14px 0 0; padding:0; list-style:none; display:grid; gap:8px; flex:1}
 .pkg li{color:var(--muted); font-size:14.5px; display:flex; gap:8px}
 .pkg li::before{content:"•"; color:var(--blue); font-weight:800}
@@ -280,8 +345,9 @@ nav.main a:hover{color:var(--text); background:rgba(255,255,255,.05)}
 
 /* FAQ */
 .faq-list{display:grid; gap:12px; max-width:860px}
-.faq-item{background:var(--card); border:1px solid var(--border); border-radius:14px; overflow:hidden}
-.faq-q{width:100%; text-align:left; background:none; border:0; color:var(--text); padding:18px 20px; font-family:"Plus Jakarta Sans",sans-serif; font-weight:700; font-size:16px; cursor:pointer; display:flex; justify-content:space-between; gap:16px; align-items:center}
+.faq-item{background:#fff; border:1px solid var(--border); border-radius:14px; overflow:hidden; box-shadow:var(--shadow); transition:border-color .2s ease}
+.faq-item:hover{border-color:rgba(47,125,255,.45)}
+.faq-q{width:100%; text-align:left; background:none; border:0; color:var(--ink); padding:18px 20px; font-family:"Plus Jakarta Sans",sans-serif; font-weight:700; font-size:16px; cursor:pointer; display:flex; justify-content:space-between; gap:16px; align-items:center; min-height:44px}
 .faq-q span:last-child{color:var(--blue); font-size:20px; line-height:1; flex:none}
 .faq-a{display:none; padding:0 20px 18px; color:var(--muted); font-size:15px}
 .faq-item.open .faq-a{display:block}
@@ -289,195 +355,91 @@ nav.main a:hover{color:var(--text); background:rgba(255,255,255,.05)}
 /* Contact */
 .contact-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:22px; align-items:start}
 @media(max-width:900px){ .contact-grid{grid-template-columns:1fr} }
-.contact-info{background:var(--card); border:1px solid var(--border); border-radius:18px; padding:26px}
+.contact-info{background:#fff; border:1px solid var(--border); border-radius:22px; padding:26px; box-shadow:var(--shadow)}
 .contact-info h3{font-size:20px; margin-bottom:8px}
 .contact-info p{color:var(--muted); margin:0 0 18px}
 .contact-row{display:flex; gap:12px; padding:14px 0; border-top:1px solid var(--border2)}
 .contact-row:first-of-type{border-top:0}
 .contact-row strong{display:block; font-size:14px}
 .contact-row span{color:var(--muted); font-size:14.5px; word-break:break-word}
-.contact-row a{color:var(--blue); text-decoration:none; font-weight:600}
-form{background:var(--card); border:1px solid var(--border); border-radius:18px; padding:26px}
+.contact-row a{color:var(--blue-dark); text-decoration:none; font-weight:600}
+.contact-row a:hover{text-decoration:underline}
+form{background:#fff; border:1px solid var(--border); border-radius:22px; padding:26px; box-shadow:var(--shadow)}
 .form-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px}
 @media(max-width:640px){ .form-grid{grid-template-columns:1fr} }
 .field{display:grid; gap:7px}
 .field.full{grid-column:1/-1}
 label{font-size:14px; font-weight:600}
 label em{color:var(--muted); font-style:normal; font-weight:400}
-input,select,textarea{width:100%; background:#0E1728; border:1px solid var(--border); color:var(--text); border-radius:11px; padding:12px 13px; font:inherit; font-size:15px; outline:none}
-input:focus,select:focus,textarea:focus{border-color:var(--blue); box-shadow:0 0 0 3px rgba(77,141,255,.18)}
+input,select,textarea{width:100%; background:#fff; border:1px solid var(--border); color:var(--ink); border-radius:11px; padding:12px 13px; font:inherit; font-size:15px; outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--blue); box-shadow:0 0 0 3px rgba(47,125,255,.18)}
 textarea{min-height:130px; resize:vertical}
-.error{color:#FF9A9A; font-size:13.5px; display:none}
+.error{color:#C22F2F; font-size:13.5px; display:none}
 .field.invalid input,.field.invalid textarea,.field.invalid select{border-color:#E15B5B}
 .field.invalid .error{display:block}
 .form-note{color:var(--muted); font-size:13.5px; margin-top:12px}
-.success{display:none; margin-top:16px; background:rgba(53,197,177,.10); border:1px solid rgba(53,197,177,.35); color:#D8FFFA; padding:14px 16px; border-radius:12px; font-size:14.5px}
+.success{display:none; margin-top:16px; background:rgba(23,184,144,.10); border:1px solid rgba(23,184,144,.4); color:#0B4A3A; padding:14px 16px; border-radius:12px; font-size:14.5px}
 .success.show{display:block}
-
-/* Footer */
-footer{border-top:1px solid var(--border2); padding:44px 0 28px; background:#090F1B}
-.footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:28px}
-@media(max-width:860px){ .footer-grid{grid-template-columns:1fr 1fr} }
-@media(max-width:520px){ .footer-grid{grid-template-columns:1fr} }
-footer h4{font-size:14px; letter-spacing:.06em; text-transform:uppercase; color:#DCE8FA; margin-bottom:12px}
-footer a{color:var(--muted); text-decoration:none; display:block; padding:5px 0; font-size:14.5px}
-footer a:hover{color:var(--text)}
-footer p{color:var(--muted); font-size:14.5px; margin:8px 0 0; max-width:320px}
-.copy{border-top:1px solid var(--border2); margin-top:30px; padding-top:18px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; color:var(--muted2); font-size:13.5px}
-:focus-visible{outline:3px solid rgba(77,141,255,.75); outline-offset:3px; border-radius:6px}
-.skip{position:fixed; left:16px; top:-60px; z-index:200; background:#fff; color:#000; padding:10px 14px; border-radius:8px; font-weight:600; font-size:14px; text-decoration:none; transition:top .15s ease}
-.skip:focus{top:12px}
-
-/* Direct contact buttons (WhatsApp / Email) */
-.btn-whatsapp{background:#25D366; color:#052E1B; box-shadow:0 10px 24px rgba(37,211,102,.28)}
-.btn-whatsapp:hover{filter:brightness(1.07)}
-.contact-direct{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:22px}
-.contact-direct .btn{flex:1 1 240px}
-.footer-direct{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
-.footer-direct a{display:inline-flex; padding:9px 16px}
-.direct-actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:12px}
-.direct-actions a{display:inline-flex; align-items:center; gap:6px; padding:7px 13px; border-radius:999px; font-size:13px; font-weight:700; text-decoration:none; border:1px solid transparent; transition:background .18s ease}
-.direct-actions a.wa{background:rgba(37,211,102,.15); color:#7CF0AC; border-color:rgba(37,211,102,.45)}
-.direct-actions a.wa:hover{background:rgba(37,211,102,.28)}
-.direct-actions a.ml{background:rgba(77,141,255,.12); color:#BFD6FF; border-color:rgba(77,141,255,.40)}
-.direct-actions a.ml:hover{background:rgba(77,141,255,.24)}
-
-/* ===== Polish upgrade ===== */
-@media(min-width:861px){ .section{padding:96px 0} }
-.btn-lg{padding:15px 26px; font-size:16px}
-.btn-primary{background:linear-gradient(135deg,#5B97FF,#3B7EF5); box-shadow:0 12px 28px rgba(77,141,255,.35)}
-.btn-primary:hover{background:linear-gradient(135deg,#6CA3FF,#2F74F2); box-shadow:0 16px 34px rgba(77,141,255,.42)}
-.btn-teal{box-shadow:0 10px 24px rgba(53,197,177,.25)}
-
-/* Hero — richer glow, bigger headline, polished card */
-.hero{padding:88px 0 96px; background:
-  radial-gradient(920px 500px at 88% -12%, rgba(77,141,255,.30), transparent 62%),
-  radial-gradient(660px 400px at 2% 112%, rgba(53,197,177,.18), transparent 60%),
-  radial-gradient(520px 320px at 55% 125%, rgba(77,141,255,.10), transparent 60%), var(--bg)}
-.hero h1{font-size:clamp(40px,5.6vw,64px)}
-.hero-card{box-shadow:0 24px 60px rgba(0,0,0,.45), 0 18px 50px rgba(77,141,255,.12)}
-.hero-card::before{content:""; position:absolute; top:0; left:0; right:0; height:3px; border-radius:22px 22px 0 0; background:linear-gradient(90deg,var(--blue),var(--teal))}
-.avatar{box-shadow:0 10px 26px rgba(77,141,255,.35)}
-.trust-badges{display:flex; flex-wrap:wrap; gap:9px; margin-top:30px}
-.tbadge{display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; padding:8px 13px; border-radius:999px; background:rgba(255,255,255,.04); border:1px solid var(--border); color:#DCE8FA}
-.tbadge::before{content:"✓"; color:var(--teal); font-weight:800; font-size:12px}
-
-/* Premium card hovers */
-.card{transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease}
-.card:hover{box-shadow:0 18px 38px rgba(0,0,0,.38), 0 0 0 1px rgba(77,141,255,.22)}
-.service-card .icon{transition:transform .22s ease}
-.service-card:hover .icon{transform:translateY(-2px) scale(1.05)}
-.step{transition:transform .22s ease, border-color .22s ease}
-.step:hover{transform:translateY(-3px); border-color:rgba(77,141,255,.5)}
-.slot{transition:border-color .22s ease, background .22s ease}
-.slot:hover{border-color:rgba(77,141,255,.55); background:linear-gradient(180deg, rgba(77,141,255,.05), transparent)}
-.faq-item{transition:border-color .2s ease}
-.faq-item:hover{border-color:rgba(77,141,255,.45)}
-.contact-info, form{box-shadow:0 14px 34px rgba(0,0,0,.25)}
-
-/* What happens next */
 .next-steps{margin-top:24px; padding-top:22px; border-top:1px solid var(--border2)}
-.next-steps h4{font-size:13.5px; letter-spacing:.08em; text-transform:uppercase; color:#DCE8FA; margin:0 0 16px}
+.next-steps h4{font-size:13.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink); margin:0 0 16px}
 .next-steps ol{list-style:none; margin:0; padding:0; display:grid; gap:16px}
 .next-steps li{display:flex; gap:12px}
 .ns-num{width:28px; height:28px; flex:none; border-radius:50%; background:var(--blue); color:#fff; display:grid; place-items:center; font-weight:800; font-size:13.5px; font-family:"Plus Jakarta Sans",sans-serif; margin-top:1px}
 .next-steps strong{display:block; font-size:15px; font-family:"Plus Jakarta Sans",sans-serif}
 .next-steps p{color:var(--muted); font-size:14px; margin:2px 0 0}
+.contact-direct{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:22px}
+.contact-direct .btn{flex:1 1 240px}
+.direct-actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:12px}
+.direct-actions a{display:inline-flex; align-items:center; gap:6px; min-height:40px; padding:9px 13px; border-radius:999px; font-size:13px; font-weight:700; text-decoration:none; border:1px solid transparent; transition:background .18s ease}
+.direct-actions a.wa{background:rgba(37,211,102,.14); color:#0B6B37; border-color:rgba(37,211,102,.5)}
+.direct-actions a.wa:hover{background:rgba(37,211,102,.26)}
+.direct-actions a.ml{background:rgba(47,125,255,.08); color:var(--blue-dark); border-color:rgba(47,125,255,.4)}
+.direct-actions a.ml:hover{background:rgba(47,125,255,.18)}
+.copy-btn{display:inline-flex; align-items:center; min-height:36px; margin-top:9px; padding:7px 14px; border-radius:999px; background:rgba(47,125,255,.08); border:1px solid var(--border); color:var(--ink); font:inherit; font-size:13px; font-weight:600; cursor:pointer; transition:background .18s ease, border-color .18s ease, color .18s ease, transform .18s ease}
+.copy-btn:hover{border-color:var(--blue); background:rgba(47,125,255,.16); transform:translateY(-1px)}
+.copy-btn.copied{border-color:var(--teal); color:var(--teal-dark); background:rgba(23,184,144,.12)}
+
+/* CTA band */
+.cta-band{background:linear-gradient(120deg, var(--blue) 0%, #2E9BD8 55%, var(--teal) 130%); color:#fff; padding:56px 0}
+.cta-in{display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap}
+.cta-in h2{font-size:clamp(24px,3.4vw,34px); font-weight:800; max-width:640px}
+.cta-in p{margin:8px 0 0; color:rgba(255,255,255,.88); font-size:16px; max-width:640px}
+.cta-in .btn{background:#fff; color:var(--blue-dark); box-shadow:0 12px 28px rgba(6,30,70,.28); font-weight:700}
+.cta-in .btn:hover{filter:brightness(1.03)}
+
+/* Footer — dark navy only */
+footer{padding:48px 0 28px; background:var(--navy); color:#DCE8FA}
+.footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:28px}
+@media(max-width:860px){ .footer-grid{grid-template-columns:1fr 1fr} }
+@media(max-width:520px){ .footer-grid{grid-template-columns:1fr} }
+footer h4{font-size:14px; letter-spacing:.06em; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px}
+footer a{color:#AFBED3; text-decoration:none; display:block; padding:5px 0; font-size:14.5px}
+footer a:hover{color:#fff; text-decoration:underline}
+footer p{color:#AFBED3; font-size:14.5px; margin:8px 0 0; max-width:320px}
+footer .logo{color:#fff}
+footer .logo small{color:#AFBED3}
+footer .btn-ghost{background:transparent; color:#fff; border-color:#2D405A}
+footer .btn-ghost:hover{background:rgba(255,255,255,.06); border-color:var(--blue)}
+.footer-direct{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+.footer-direct a{display:inline-flex; padding:9px 16px}
+.copy{border-top:1px solid #223650; margin-top:30px; padding-top:18px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; color:#8FA3BE; font-size:13.5px}
+:focus-visible{outline:3px solid rgba(47,125,255,.75); outline-offset:3px; border-radius:6px}
+.skip{position:fixed; left:16px; top:-60px; z-index:200; background:#fff; color:#000; padding:10px 14px; border-radius:8px; font-weight:600; font-size:14px; text-decoration:none; transition:top .15s ease}
+.skip:focus{top:12px}
+
+/* Floating WhatsApp */
+.wa-float{position:fixed; right:18px; bottom:calc(18px + env(safe-area-inset-bottom, 0px)); z-index:90; width:58px; height:58px; border-radius:50%; background:#25D366; display:grid; place-items:center; box-shadow:0 14px 32px rgba(6,30,70,.30); transition:transform .2s ease, box-shadow .2s ease}
+.wa-float svg{width:30px; height:30px; fill:#fff; display:block}
+.wa-float::after{content:""; position:absolute; inset:0; border-radius:50%; border:2px solid rgba(37,211,102,.55); animation:waPulse 2.4s ease-out infinite; pointer-events:none}
+@keyframes waPulse{0%{transform:scale(1); opacity:.8} 70%{transform:scale(1.38); opacity:0} 100%{transform:scale(1.38); opacity:0}}
+.wa-float:hover{transform:translateY(-3px) scale(1.07); box-shadow:0 20px 40px rgba(6,30,70,.4)}
 
 /* Scroll reveal */
 .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease}
 .reveal.in{opacity:1; transform:none}
 @media (prefers-reduced-motion: reduce){ .reveal{opacity:1!important; transform:none!important} }
 
-/* ===== Premium USA pass — light sections, bigger cards, richer motion ===== */
-:root{ --paper:#F5F8FD; --paper-card:#FFFFFF; --ink:#0E1B30; --ink-muted:#4A5F7F; --ink-border:#DCE6F2;
-  --soft-shadow:0 10px 30px rgba(14,27,48,.08); --soft-shadow-lg:0 22px 48px rgba(14,27,48,.14) }
-
-/* Light sections (US agency style: clean white mixed with the dark navy) */
-.section.light{background:var(--paper); color:var(--ink)}
-.section.light .section-head p{color:var(--ink-muted)}
-.section.light .card, .section.light .faq-item, .section.light .checklist li{
-  background:var(--paper-card); border-color:var(--ink-border); box-shadow:var(--soft-shadow); border-radius:22px}
-.section.light .card:hover{transform:translateY(-5px); border-color:rgba(77,141,255,.55); box-shadow:var(--soft-shadow-lg)}
-.section.light .card p, .section.light .faq-a, .section.light .checklist span{color:var(--ink-muted)}
-.section.light .problem-card p strong, .section.light .checklist strong{color:var(--ink)}
-.section.light .faq-q{color:var(--ink)}
-.section.light .icon{background:rgba(77,141,255,.10)}
-.section.light .icon.teal{background:rgba(53,197,177,.14)}
-.section.light .work-note{background:#EAF1FC; border-color:rgba(77,141,255,.4); color:var(--ink-muted)}
-.section.light .work-note strong{color:var(--ink)}
-.section.light .slot{border:1px solid var(--ink-border); background:var(--paper-card); box-shadow:var(--soft-shadow); border-radius:22px}
-.section.light .slot.live, .section.light .slot.sample{background:var(--paper-card)}
-.section.light .slot:hover{transform:translateY(-5px); border-color:rgba(77,141,255,.55); box-shadow:var(--soft-shadow-lg)}
-.section.light .slot p{color:var(--ink-muted)}
-.section.light .slot-badge{background:#E8EFF9; color:#33486B; border-color:var(--ink-border)}
-.section.light .slot-badge.owner{background:rgba(53,197,177,.16); color:#0C5C4E; border-color:rgba(53,197,177,.45)}
-.section.light .slot-badge.rank{background:rgba(77,141,255,.12); color:#2456A6; border-color:rgba(77,141,255,.35)}
-.section.light .slot-badge.sample{background:rgba(255,176,66,.18); color:#7A4E00; border-color:rgba(255,176,66,.55)}
-.section.light .sample-note{color:var(--ink-muted)}
-.section.light .sample-did li{color:var(--ink-muted)}
-.section.light .direct-actions a.wa{background:rgba(37,211,102,.14); color:#0B6B37; border-color:rgba(37,211,102,.5)}
-.section.light .direct-actions a.wa:hover{background:rgba(37,211,102,.26)}
-.section.light .direct-actions a.ml{background:rgba(77,141,255,.10); color:#2456A6; border-color:rgba(77,141,255,.4)}
-.section.light .direct-actions a.ml:hover{background:rgba(77,141,255,.2)}
-
-/* Bigger, softer dark cards + hover lift everywhere */
-.card{border-radius:22px}
-.step{border-radius:20px}
-.slot{border-radius:22px; transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease}
-.slot:hover{transform:translateY(-5px); box-shadow:0 24px 48px rgba(0,0,0,.4)}
-
-/* Project picture tiles — brighter, hover zoom */
-.pv{height:210px; border-radius:16px}
-.pv-bg{transition:transform .55s ease}
-.slot:hover .pv-bg{transform:scale(1.07)}
-.pv-emoji{transition:transform .35s ease}
-.slot:hover .pv-emoji{transform:scale(1.1) rotate(-3deg)}
-.pv-title{font-size:22px}
-
-/* "Hire me for this" — a real button on every project card */
-.slot-link a[data-service]{display:inline-flex; align-items:center; gap:7px; background:linear-gradient(135deg,#5B97FF,#3B7EF5); color:#fff; padding:11px 20px; border-radius:999px; font-size:14.5px; font-weight:700; box-shadow:0 10px 22px rgba(77,141,255,.32); transition:transform .18s ease, box-shadow .18s ease, filter .18s ease}
-.slot-link a[data-service]:hover{text-decoration:none; transform:translateY(-2px); filter:brightness(1.06); box-shadow:0 14px 28px rgba(77,141,255,.4)}
-
-/* Hero — bigger and bolder */
-.hero{padding:96px 0 104px}
-.hero h1{font-size:clamp(42px,6vw,68px); letter-spacing:-.025em}
-.hero-sub{font-size:19px}
-.hero-signals{display:flex; flex-wrap:wrap; gap:9px; margin-top:22px}
-.hsig{display:inline-flex; align-items:center; gap:7px; font-size:13.5px; font-weight:700; padding:9px 14px; border-radius:999px; background:rgba(53,197,177,.10); border:1px solid rgba(53,197,177,.35); color:#CFF7F0}
-.hsig::before{content:"✓"; color:var(--teal); font-weight:800; font-size:12.5px}
-
-.section.light .about-box{background:var(--paper-card); border-color:var(--ink-border); box-shadow:var(--soft-shadow); border-radius:22px}
-.section.light .about-box p{color:var(--ink-muted)}
-.section.light .chip{background:#EEF3FB; border-color:var(--ink-border); color:#33486B}
-
-/* Gentle entrance motion for the hero */
-@keyframes riseIn{from{opacity:0; transform:translateY(16px)} to{opacity:1; transform:none}}
-.hero-grid > div:first-child{animation:riseIn .7s ease both}
-.hero-card{animation:riseIn .7s ease .12s both}
-@media (prefers-reduced-motion: reduce){ .hero-grid > div:first-child, .hero-card{animation:none} }
-
-/* ===== Final pass: mobile tap targets, floating WhatsApp, copy fallback, tile hover ===== */
-html,body{overflow-x:clip}
-@supports not (overflow:clip){ html,body{overflow-x:hidden} }
-.btn{min-height:44px}
-.btn:hover{transform:translateY(-2px) scale(1.02)}
-footer a:hover{text-decoration:underline}
-.contact-row a:hover{text-decoration:underline}
-.direct-actions a{min-height:40px; padding-top:9px; padding-bottom:9px}
-.pv-bg{filter:saturate(1.15) brightness(1.06)}
-.slot:hover .pv-bg{filter:saturate(1.22) brightness(1.1)}
-.pv-cta{position:absolute; left:50%; top:50%; z-index:3; transform:translate(-50%,-50%) scale(.9); background:rgba(7,15,28,.85); color:#fff; border:1px solid rgba(255,255,255,.55); padding:10px 18px; border-radius:999px; font-family:"Plus Jakarta Sans",sans-serif; font-weight:700; font-size:14.5px; white-space:nowrap; opacity:0; pointer-events:none; transition:opacity .25s ease, transform .25s ease}
-.slot:hover .pv-cta,.slot:focus-within .pv-cta{opacity:1; transform:translate(-50%,-50%) scale(1)}
-.slot:hover .pv{box-shadow:inset 0 0 0 999px rgba(6,14,28,.20)}
-.copy-btn{display:inline-flex; align-items:center; min-height:36px; margin-top:9px; padding:7px 14px; border-radius:999px; background:rgba(77,141,255,.10); border:1px solid var(--border); color:var(--text); font:inherit; font-size:13px; font-weight:600; cursor:pointer; transition:background .18s ease, border-color .18s ease, color .18s ease, transform .18s ease}
-.copy-btn:hover{border-color:var(--blue); background:rgba(77,141,255,.20); transform:translateY(-1px)}
-.copy-btn.copied{border-color:var(--teal); color:#B9F2EA; background:rgba(53,197,177,.14)}
-.wa-float{position:fixed; right:18px; bottom:calc(18px + env(safe-area-inset-bottom, 0px)); z-index:90; width:58px; height:58px; border-radius:50%; background:#25D366; display:grid; place-items:center; box-shadow:0 14px 32px rgba(0,0,0,.42); transition:transform .2s ease, box-shadow .2s ease}
-.wa-float svg{width:30px; height:30px; fill:#fff; display:block}
-.wa-float::after{content:""; position:absolute; inset:0; border-radius:50%; border:2px solid rgba(37,211,102,.55); animation:waPulse 2.4s ease-out infinite; pointer-events:none}
-@keyframes waPulse{0%{transform:scale(1); opacity:.8} 70%{transform:scale(1.38); opacity:0} 100%{transform:scale(1.38); opacity:0}}
-.wa-float:hover{transform:translateY(-3px) scale(1.07); box-shadow:0 20px 40px rgba(0,0,0,.5)}
+@media(min-width:861px){ .section{padding:96px 0} }
 @media(max-width:640px){
   .wrap{padding:0 16px}
   .section{padding:60px 0}
@@ -492,41 +454,16 @@ footer a:hover{text-decoration:underline}
   footer a{padding:10px 0}
   input,select,textarea{font-size:16px}
   .pv{height:200px}
+  .writing-actions .btn{flex:1 1 100%; min-height:48px}
+  .sample-card .pv{height:190px}
   .wa-float{right:14px; bottom:calc(14px + env(safe-area-inset-bottom, 0px)); width:56px; height:56px}
+  .timeline li{padding-left:54px}
 }
 @media(max-width:380px){
   .hero h1{font-size:34px}
   .pv-title{font-size:19px}
   .pv-mock{display:none}
 }
-
-/* ===== Writing samples + new services pass ===== */
-/* AEO direct-answer block at the top of Services */
-.answer-block{max-width:860px; background:linear-gradient(160deg, rgba(77,141,255,.12), rgba(53,197,177,.07)); border:1px solid rgba(77,141,255,.35); border-radius:18px; padding:22px 24px; margin-bottom:30px}
-.answer-block h3{font-size:18px; margin-bottom:8px}
-.answer-block p{color:var(--muted); margin:0; font-size:15.5px}
-.answer-block p strong{color:var(--text)}
-
-/* Writing sample tiles — bright picture-style covers, one per niche */
-.pv-keto{background:linear-gradient(135deg,#2E7D46,#35C5B1)}
-.pv-minecraft{background:linear-gradient(135deg,#4E7A1E,#7CB342 55%,#6D4C2F)}
-.pv-jackal{background:linear-gradient(135deg,#A9711F,#E8A33D)}
-.pv-hair{background:linear-gradient(135deg,#B23A72,#F28BB4)}
-.pv-dog{background:linear-gradient(135deg,#1F6F8B,#F2B33D)}
-.pv-cat{background:linear-gradient(135deg,#1C2027,#4A4436 60%,#C99B2F)}
-.sample-card{display:flex; flex-direction:column}
-.sample-card .tag{align-self:flex-start; margin-top:16px}
-.sample-card h3{font-size:18.5px; margin:10px 0 8px; line-height:1.3}
-.sample-card p{color:var(--muted); font-size:15px; margin:0}
-.writing-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:auto; padding-top:18px}
-.writing-actions .btn{flex:1 1 150px}
-.samples-note{max-width:820px; color:var(--muted); font-size:15px; margin-top:22px}
-.samples-note strong{color:var(--text)}
-@media(max-width:640px){
-  .writing-actions .btn{flex:1 1 100%; min-height:48px}
-  .sample-card .pv{height:190px}
-}
-
 </style>
 </head>
 <body>
@@ -534,31 +471,31 @@ footer a:hover{text-decoration:underline}
 
 <header>
   <div class="wrap header-in">
-    <a class="logo" href="#top" aria-label="Zain Naseer home">
+    <a class="logo" href="#home" data-nav="home" aria-label="Zain Naseer home">
       <span class="logo-mark">ZN</span>
       <span>Zain Naseer<small>SEO &amp; Local Business Growth</small></span>
     </a>
     <nav class="main" aria-label="Main navigation">
-      <a href="#services">Services</a>
-      <a href="#samples">Samples</a>
-      <a href="#work">Work</a>
-      <a href="#process">Process</a>
-      <a href="#about">About</a>
-      <a href="#packages">Packages</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#about" data-nav="about">About Us</a>
+      <a href="#services-projects" data-nav="services-projects">Services &amp; Projects</a>
+      <a href="#contact" data-nav="contact">Contact</a>
     </nav>
-    <a class="btn btn-primary btn-sm header-cta" href="#contact">Let’s Talk →</a>
+    <a class="btn btn-primary btn-sm header-cta" href="#contact">Get My Free Audit →</a>
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">☰</button>
   </div>
   <div class="wrap mobile-nav" id="mobileNav">
-    <a href="#services">Services</a><a href="#samples">Samples</a><a href="#work">Work</a><a href="#process">Process</a>
-    <a href="#about">About</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-    <a href="#contact" style="color:var(--blue); font-weight:700">Let’s Talk →</a>
+    <a href="#home" data-nav="home">Home</a>
+    <a href="#about" data-nav="about">About Us</a>
+    <a href="#services-projects" data-nav="services-projects">Services &amp; Projects</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+    <a href="#contact" style="color:var(--blue-dark); font-weight:700">Get My Free Audit →</a>
   </div>
 </header>
 
 <main id="main">
+<!-- ==================== PAGE: HOME ==================== -->
+<div class="page" id="page-home" data-page="home">
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="wrap hero-grid">
@@ -569,7 +506,7 @@ footer a:hover{text-decoration:underline}
       <div class="hero-ctas">
         <a class="btn btn-primary btn-lg" href="#contact">Get My Free Audit →</a>
         <a class="btn btn-whatsapp btn-lg" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">Chat on WhatsApp</a>
-        <a class="btn btn-ghost btn-lg" href="#work">See My Work</a>
+        <a class="btn btn-ghost btn-lg" href="#services-projects">See Services &amp; Projects</a>
         <a class="btn btn-ghost btn-lg" href="mailto:malikzaini6788@gmail.com?subject=SEO%20Project%20Enquiry">Email Me</a>
       </div>
       <div class="hero-signals" aria-label="How working with Zain starts">
@@ -620,7 +557,7 @@ footer a:hover{text-decoration:underline}
 </div>
 
 <!-- PROBLEMS -->
-<section class="section light" id="problems">
+<section class="section" id="problems">
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Sound Familiar?</span>
@@ -652,13 +589,336 @@ footer a:hover{text-decoration:underline}
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="section alt" id="services">
+<!-- SERVICES OVERVIEW (short, links to Services & Projects page) -->
+<section class="section alt" id="services-overview">
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Services</span>
-      <h2>SEO Services by Zain Naseer</h2>
-      <p>Pick a single service or combine them. Every service includes clear deliverables, honest timelines, and reporting you can actually understand.</p>
+      <h2>What I can do for your business</h2>
+      <p>Ten services under one roof — from getting found on Google to content, ads and affiliate growth. Here’s the short version; the full detail for every service is on the Services &amp; Projects page.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card overview-card"><div class="icon">📍</div><h3>Local SEO &amp; Google Business Profile</h3><p>Show up in Maps and “near me” results when nearby customers look for services like yours.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon">🔍</div><h3>SEO Strategy &amp; Audits</h3><p>Full audits, keyword research and on-page fixes that make your site easier to find and use.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon teal">🔗</div><h3>Link Building</h3><p>Relevant authority from genuine editorial opportunities — white-hat only.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon">🌐</div><h3>WordPress &amp; Website Design</h3><p>Fast, mobile-first WordPress websites built to turn visits into inquiries.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon teal">✍️</div><h3>SEO Content Writing</h3><p>Articles and pages that answer customer questions and support real action — not filler.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon">🎯</div><h3>Google Ads</h3><p>Reach people already searching for what you offer, with clear conversion tracking.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon teal">📱</div><h3>Meta Ads — Facebook &amp; Instagram</h3><p>Put relevant offers in front of the audiences most likely to care about them.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon">🛍️</div><h3>Etsy Optimization</h3><p>Keyword-researched listings that help shoppers find your products faster.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon teal">📌</div><h3>Pinterest Marketing</h3><p>Pinterest SEO that turns pins into a steady traffic source for blogs, shops and affiliate sites.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card"><div class="icon">🛒</div><h3>Amazon Affiliate Marketing</h3><p>Affiliate review content that ranks on Google and sells without hype.</p><div class="go"><a href="#services-projects">See full service details →</a></div></article>
+      <article class="card overview-card" style="background:linear-gradient(160deg, rgba(47,125,255,.10), rgba(23,184,144,.08))"><div class="icon">💬</div><h3>Not sure what you need?</h3><p>Start with a free audit. I’ll tell you honestly what would help most — and what can wait.</p><div class="go"><a href="#contact">Get my free audit →</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HIRE US -->
+<section class="section" id="why-hire">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Why Hire Us</span>
+      <h2>Why hire Zain?</h2>
+      <p>No agency layers, no inflated promises — just one specialist, proof you can check, and honest work from day one.</p>
+    </div>
+    <div class="why-grid">
+      <article class="card why-card"><div class="icon">🤝</div><h3>You talk directly to the person who does the work</h3><p>No agency middleman and nothing lost in translation. The person you explain your business to is the same person doing the SEO, content and ads.</p></article>
+      <article class="card why-card"><div class="icon teal">🏆</div><h3>Proof you can check yourself</h3><p>Live websites ranking #1 on Google for their own names, and writing samples you can read in full — all before you pay anything.</p></article>
+      <article class="card why-card"><div class="icon">🔎</div><h3>Free audit first</h3><p>Know exactly what’s wrong and what I’d fix first before spending a dollar. No obligation, no pressure.</p></article>
+      <article class="card why-card"><div class="icon teal">🔓</div><h3>No contracts, no lock-in</h3><p>Stay because it’s working, not because you’re trapped. Work is agreed project by project, with clear quotes up front.</p></article>
+      <article class="card why-card"><div class="icon">🧩</div><h3>Everything under one roof</h3><p>SEO, Local SEO, content writing, website design, ads, Pinterest and Amazon affiliate — from one specialist, planned together so everything pulls in one direction.</p></article>
+      <article class="card why-card"><div class="icon teal">⚡</div><h3>Fast, honest communication</h3><p>Reply within 24 hours — and if something won’t work, you’ll hear that straight, not a sales pitch.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT TEASER -->
+<section class="section alt" id="about-teaser">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">About</span>
+      <h2>From a notes app problem to ranking websites</h2>
+    </div>
+    <div class="about-box">
+      <p>I’m Zain Naseer, an SEO specialist with a BSCS degree and 4 years of SEO experience. As a computer science student I tracked my class attendance by hand in a notes app, found it painful, and built an attendance calculator to solve it — that became my first website. I went on to build and run four websites in total, two of which reached #1 on Google for their own names, and today I help local businesses worldwide get found on Google.</p>
+      <a class="btn btn-primary" href="#about" style="margin-top:8px">Read my full story →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK STRIP -->
+<section class="section" id="featured-work">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Featured Work</span>
+      <h2>Live websites — open them and see for yourself</h2>
+      <p>Real, live websites built and run end-to-end: SEO, content and publishing. Two of them rank #1 on Google for their own names.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card feat-card">
+        <div class="pv" aria-hidden="true"><div class="pv-bg pv-att"></div><span class="pv-deco d1"></span><span class="pv-deco d2"></span><div class="pv-in"><div class="pv-top"><div class="pv-emoji">🧮</div></div><div class="pv-title">Attendance Calculators</div><div class="pv-sub">attendancecalculators.net</div></div></div>
+        <h3>Attendance Calculators</h3>
+        <p>Free attendance percentage calculators for the 75% rule, safe bunks and recovery classes — plus SEO guides for many universities.</p>
+        <div class="slot-link"><a href="https://attendancecalculators.net/" target="_blank" rel="noopener">Visit attendancecalculators.net →</a></div>
+      </article>
+      <article class="card feat-card">
+        <div class="pv" aria-hidden="true"><div class="pv-bg pv-bible"></div><span class="pv-deco d1"></span><span class="pv-deco d2"></span><div class="pv-in"><div class="pv-top"><div class="pv-emoji">📖</div></div><div class="pv-title">Random Bible Verse Generator</div><div class="pv-sub">randombibleversegenerator.org</div></div></div>
+        <h3>Random Bible Verse Generator</h3>
+        <p>A random verse generator with topic filters and multiple Bible editions. <strong>#1 on Google for “random bible verse generator”</strong> — verified 25 Oct 2026.</p>
+        <div class="slot-link"><a href="https://randombibleversegenerator.org/" target="_blank" rel="noopener">Visit randombibleversegenerator.org →</a></div>
+      </article>
+      <article class="card feat-card">
+        <div class="pv" aria-hidden="true"><div class="pv-bg pv-elf"></div><span class="pv-deco d1"></span><span class="pv-deco d2"></span><div class="pv-in"><div class="pv-top"><div class="pv-emoji">🧝</div></div><div class="pv-title">Elf Name Generator</div><div class="pv-sub">elfgeneratorname.com</div></div></div>
+        <h3>Elf Name Generator</h3>
+        <p>An elf name generator for D&amp;D, Tolkien, Skyrim and more, with name meanings and lore. <strong>#1 on Google for “elf name generator”</strong> — verified 25 Oct 2026.</p>
+        <div class="slot-link"><a href="https://elfgeneratorname.com/" target="_blank" rel="noopener">Visit elfgeneratorname.com →</a></div>
+      </article>
+    </div>
+    <p style="color:var(--muted); margin-top:20px; font-size:15px">See all projects and writing samples on the <a href="#services-projects" style="color:var(--blue-dark); font-weight:600; text-decoration:none">Services &amp; Projects page →</a></p>
+  </div>
+</section>
+
+<!-- PLATFORMS STRIP -->
+<section class="section alt" id="platforms">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Tools of the Trade</span>
+      <h2>Platforms &amp; tools I work with</h2>
+    </div>
+    <div class="strip-chips">
+      <span class="pchip">WordPress</span><span class="pchip">Google Business Profile</span><span class="pchip">Google Search Console</span><span class="pchip">Rank Math</span><span class="pchip">Google Ads</span><span class="pchip">Meta Ads</span><span class="pchip">Pinterest</span><span class="pchip">Amazon</span><span class="pchip">Etsy</span>
+    </div>
+    <div class="section-head" style="margin-top:44px; margin-bottom:20px">
+      <span class="kicker">Who I Help</span>
+      <h2>Business types I help</h2>
+    </div>
+    <div class="strip-chips">
+      <span class="pchip">Dentists</span><span class="pchip">Plumbers</span><span class="pchip">Restaurants</span><span class="pchip">Clinics</span><span class="pchip">Home services</span><span class="pchip">Real estate</span><span class="pchip">Local shops</span><span class="pchip">Online stores</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">How I Work</span>
+      <h2>A clear process — no guesswork</h2>
+      <p>You always know what’s happening, what it costs, and what comes next. Here’s how every project runs.</p>
+    </div>
+    <div class="process">
+      <div class="step"><div class="step-num">1</div><h3>Discover</h3><p>We talk about your business, customers, competitors and goals. I listen first, recommend second.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>Audit</h3><p>I review your website, Google profile, content and visibility to find what’s holding you back.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Plan</h3><p>You get a prioritized plan with deliverables, timeline and a clear quote — before any work starts.</p></div>
+      <div class="step"><div class="step-num">4</div><h3>Execute</h3><p>I do the work: optimization, content, website changes or campaigns — with updates as I go.</p></div>
+      <div class="step"><div class="step-num">5</div><h3>Measure &amp; Improve</h3><p>Simple reporting on visibility and inquiries, plus honest next steps to keep improving.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section alt" id="packages">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Ways To Start</span>
+      <h2>Packages — priced for your project</h2>
+      <p>Every business is different, so pricing is quoted per project after a short discussion. No hidden fees, and ad spend is always separate from management fees.</p>
+    </div>
+    <div class="grid grid-4">
+      <article class="card pkg"><h3>SEO Visibility Audit</h3><div class="price">Request a Quote</div><p style="color:var(--muted); font-size:14.5px; margin-top:6px">Find out exactly what’s holding your visibility back.</p><ul><li>Website &amp; SEO audit</li><li>Google profile review</li><li>Competitor snapshot</li><li>Prioritized action report</li></ul><a class="btn btn-ghost" href="#contact" data-service="SEO Visibility Audit (Package)">Request a Quote</a></article>
+      <article class="card pkg"><h3>Local Visibility Setup</h3><div class="price">Request a Quote</div><p style="color:var(--muted); font-size:14.5px; margin-top:6px">Get your local presence set up properly, once.</p><ul><li>GBP full optimization</li><li>Citation consistency</li><li>Local page recommendations</li><li>Review workflow setup</li></ul><a class="btn btn-primary" href="#contact" data-service="Local Visibility Setup (Package)">Request a Quote</a></article>
+      <article class="card pkg"><h3>Website Growth Foundation</h3><div class="price">Request a Quote</div><p style="color:var(--muted); font-size:14.5px; margin-top:6px">A fast, SEO-ready website built to turn visits into inquiries.</p><ul><li>WordPress build / redesign</li><li>On-page SEO setup</li><li>Speed &amp; mobile optimization</li><li>Forms &amp; analytics setup</li></ul><a class="btn btn-ghost" href="#contact" data-service="Website Growth Foundation (Package)">Request a Quote</a></article>
+      <article class="card pkg"><h3>Growth Partnership</h3><div class="price">Request a Quote</div><p style="color:var(--muted); font-size:14.5px; margin-top:6px">Ongoing SEO, content and reporting — scoped monthly.</p><ul><li>Monthly SEO &amp; content work</li><li>Link building outreach</li><li>Ads management (optional)</li><li>Monthly progress report</li></ul><a class="btn btn-ghost" href="#contact" data-service="Growth Partnership (Package)">Request a Quote</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Questions</span>
+      <h2>Frequently asked questions</h2>
+      <p>Straight answers, before you spend anything.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How long does SEO take to show results?<span>+</span></button><div class="faq-a">SEO usually takes a few months of consistent work to show meaningful ranking and traffic improvements. Small fixes — like a corrected Google Business Profile — can help quickly, and I’ll show you progress monthly so you can see movement, not just promises.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you guarantee a #1 ranking on Google?<span>+</span></button><div class="faq-a">No — no honest SEO can guarantee a #1 ranking on Google. Rankings depend on Google, your market and your competitors. What I guarantee is proper, white-hat work, clear priorities, and honest reporting on what improves.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you improve my local / Maps visibility?<span>+</span></button><div class="faq-a">Yes — local and Maps visibility is my specialty. I optimize your Google Business Profile, categories, services, photos, citations and local pages so nearby customers are more likely to find and choose you when they search.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you build and manage WordPress websites?<span>+</span></button><div class="faq-a">Yes — I build and redesign WordPress websites. They are fast, mobile-friendly and SEO-ready, and I can help with ongoing updates and optimization if you need it.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How do you report progress?<span>+</span></button><div class="faq-a">You get a simple, plain-language report covering what was done and what comes next. It includes work completed, visibility and inquiry changes where measurable, and the next steps planned — no padded reports or vanity numbers.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you audit my website / profile first?<span>+</span></button><div class="faq-a">Yes — most projects start with an audit. Send me your website and Google profile link through the contact form and I’ll review where you stand and what I’d fix first.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What do you need from me to start?<span>+</span></button><div class="faq-a">To start, I only need your business details, your website if you have one, and any access you’re comfortable sharing. We agree the scope and quote first — nothing starts without your approval.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer one-off projects, or only monthly work?<span>+</span></button><div class="faq-a">Both — one-off projects and monthly work are available. Audits, profile setup and website builds work well as one-off projects, while ongoing SEO, content and ads are usually monthly. We’ll pick whichever fits your goal and budget.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What makes an SEO service the best choice for a small business?<span>+</span></button><div class="faq-a">The best SEO service for a small business is one that focuses on local customers, clear reporting and work matched to your budget. That means Google Business Profile optimisation, local keyword targeting, quality link building and helpful content — combined with honest timelines and no guaranteed-ranking promises.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer Pinterest marketing?<span>+</span></button><div class="faq-a">Yes — I offer Pinterest marketing and Pinterest SEO. That includes keyword-rich boards and pin titles, scroll-stopping pin designs, Idea Pins, and traffic strategies that send Pinterest visitors to blogs, Etsy shops and affiliate sites. Beauty, home, food and lifestyle niches perform especially well — see my haircut guide in the writing samples.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you write Amazon affiliate review articles?<span>+</span></button><div class="faq-a">Yes — I write Amazon affiliate review articles and buying guides. I research buyer-intent keywords and write honest pros and cons readers trust, so the content sells without hype. You can read my KetoSana review in the writing samples to see the style.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section alt" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Contact</span>
+      <h2>Tell me about your project</h2>
+      <p>Tell me about your business and what you want to achieve. I’ll reply with honest feedback and clear next steps — no obligation.</p>
+    </div>
+    <div class="contact-direct">
+      <a class="btn btn-whatsapp btn-lg" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">WhatsApp — 0314 5623583</a>
+      <a class="btn btn-primary btn-lg" href="mailto:malikzaini6788@gmail.com?subject=SEO%20Project%20Enquiry">Email — malikzaini6788@gmail.com</a>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact details</h3>
+        <p>Three easy ways to reach me: tap WhatsApp or Email above — both open straight away — or send the form and your message lands directly in my inbox.</p>
+        <div class="contact-row"><div style="font-size:20px">✉️</div><div><strong>Email</strong><span><a href="mailto:malikzaini6788@gmail.com?subject=SEO%20Project%20Enquiry">malikzaini6788@gmail.com</a></span><br><button class="copy-btn" type="button" data-copy="malikzaini6788@gmail.com" data-label="Copy email">Copy email</button></div></div>
+        <div class="contact-row"><div style="font-size:20px">💬</div><div><strong>WhatsApp</strong><span><a href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">0314 5623583</a> — tap to chat with me directly.</span><br><button class="copy-btn" type="button" data-copy="0314 5623583" data-label="Copy number">Copy number</button></div></div>
+        <div class="contact-row"><div style="font-size:20px">in</div><div><strong>LinkedIn</strong><span>Connect with “Zain Naseer — SEO Specialist” on LinkedIn, or reach me by email for the direct profile link.</span></div></div>
+        <div class="contact-row"><div style="font-size:20px">🌍</div><div><strong>Working with</strong><span>Local businesses, startups &amp; service companies — remote, worldwide.</span></div></div>
+        <div class="avail" style="margin-top:20px"><i></i><span><strong>Free first discussion.</strong> Share your website and goals — I’ll tell you honestly what I’d do first.</span></div>
+        <div class="next-steps">
+          <h4>What happens next</h4>
+          <ol>
+            <li><span class="ns-num">1</span><div><strong>You send your inquiry</strong><p>Use the form or email me directly — it takes about two minutes. No commitment.</p></div></li>
+            <li><span class="ns-num">2</span><div><strong>I review &amp; reply honestly</strong><p>I look at your website and Google presence, then reply with clear feedback and what I’d fix first.</p></div></li>
+            <li><span class="ns-num">3</span><div><strong>We agree scope &amp; quote first</strong><p>You get a clear plan and price before any work starts. Nothing begins without your approval.</p></div></li>
+          </ol>
+        </div>
+      </div>
+      <form id="contactForm" action="https://formsubmit.co/malikzaini6788@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Portfolio Enquiry — Zain Naseer">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-grid">
+          <div class="field"><label for="fName">Your name *</label><input id="fName" name="name" type="text" autocomplete="name" placeholder="e.g. Ahmed Khan" required><span class="error">Please enter your name.</span></div>
+          <div class="field"><label for="fEmail">Work email *</label><input id="fEmail" name="email" type="email" autocomplete="email" placeholder="you@company.com" required><span class="error">Please enter a valid email address.</span></div>
+          <div class="field"><label for="fSite">Business / website <em>(optional)</em></label><input id="fSite" name="website" type="text" inputmode="url" placeholder="yourbusiness.com"></div>
+          <div class="field"><label for="fService">Service you need</label>
+            <select id="fService" name="service">
+              <option>Local SEO &amp; Google Business Profile</option><option>SEO Strategy &amp; Audits</option><option>Link Building</option>
+              <option>WordPress &amp; Website Design</option><option>SEO Content Writing</option><option>Google Ads</option>
+              <option>Meta Ads (Facebook &amp; Instagram)</option><option>Etsy Optimization</option>
+              <option>Pinterest Marketing</option><option>Amazon Affiliate Marketing</option>
+              <option>SEO Visibility Audit (Package)</option><option>Local Visibility Setup (Package)</option>
+              <option>Website Growth Foundation (Package)</option><option>Growth Partnership (Package)</option>
+              <option>Not sure yet — advise me</option>
+            </select>
+          </div>
+          <div class="field"><label for="fBudget">Approximate budget <em>(optional)</em></label>
+            <select id="fBudget" name="budget"><option>Prefer to discuss</option><option>Small one-off project</option><option>Monthly — getting started</option><option>Monthly — growth focused</option><option>Larger project</option></select>
+          </div>
+          <div class="field full"><label for="fMsg">Your goal / message *</label><textarea id="fMsg" name="message" placeholder="Tell me about your business, where you are located, and what you want more of — calls, visits, sales…" required></textarea><span class="error">Please add a short message about your project.</span></div>
+        </div>
+        <button class="btn btn-primary" type="submit" id="submitBtn" style="margin-top:18px; width:100%">Send My Message</button>
+        <p class="form-note">Your message is delivered straight to Zain’s inbox at malikzaini6788@gmail.com. Your details are only used to reply to your inquiry.</p>
+        <div class="success" id="formSuccess" role="status">✓ Thanks! Your message was sent — Zain will reply within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND (Home) -->
+<section class="cta-band">
+  <div class="wrap cta-in">
+    <div><h2>Get your free SEO audit — no contract, no pressure</h2><p>Tell me about your business and I’ll show you exactly what’s holding your Google visibility back — and what I’d fix first.</p></div>
+    <a class="btn btn-lg" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">Chat on WhatsApp →</a>
+  </div>
+</section>
+</div><!-- /page-home -->
+
+<!-- ==================== PAGE: ABOUT US ==================== -->
+<div class="page" id="page-about" data-page="about">
+<section class="section" id="about-main">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">About Us</span>
+      <h2 style="font-size:clamp(32px,4.6vw,46px)">About Us</h2>
+      <p>I’m Zain Naseer — an SEO &amp; Local Business Growth Specialist with a BSCS degree and 4 years of SEO experience. I help local businesses worldwide get found on Google, and I got here by ranking the websites I built first.</p>
+    </div>
+    <div class="about-box">
+      <h3>How it started: a notes app and a lot of missed classes</h3>
+      <p>As a computer science student, I tracked my class attendance by hand in a notes app. It was slow, easy to get wrong, and honestly painful — I never quite knew whether I was safely above the attendance line or one bunk away from trouble.</p>
+      <p>So I built an attendance calculator to solve that problem. That calculator became my first website, <a href="https://attendancecalculators.net/" target="_blank" rel="noopener" style="color:var(--blue-dark); font-weight:600">attendancecalculators.net</a>, which now helps students check attendance rules — like the 75% rule — for many universities.</p>
+      <p>Building that site forced me to learn SEO properly: if students couldn’t find the calculator on Google, it didn’t matter how well it worked. I learned by doing — keyword research, content, technical fixes, and watching what actually moved rankings.</p>
+      <p>I went on to build and run three more websites: a random Bible verse generator, an elf name generator, and a Turkish Minecraft APK guide site — writing SEO content in both English and Turkish. Two of those websites reached #1 on Google for their own names — “random bible verse generator” and “elf name generator” (verified 25 Oct 2026).</p>
+      <p>After ranking those sites, I learned Local SEO and started helping local businesses get found on Google — Google Business Profile, local rankings and reviews — alongside SEO, link building, content writing, ads, Pinterest marketing and Amazon affiliate services.</p>
+      <p>Today I work with clients worldwide, with the US first. I reply within 24 hours, and I always offer a free audit before any paid work — so you know exactly where you stand before you spend anything.</p>
+      <div class="chips">
+        <span class="chip">BSCS — Computer Science</span><span class="chip">4 Years in SEO</span><span class="chip">4 Websites Built &amp; Run</span><span class="chip">2 Sites at #1 on Google</span><span class="chip">English &amp; Turkish Content</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="about-timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">The Journey</span>
+      <h2>My story, step by step</h2>
+    </div>
+    <ol class="timeline">
+      <li><span class="tl-num">1</span><h3>BSCS studies — and the notes-app problem</h3><p>Studying computer science while tracking class attendance by hand in a notes app: slow, error-prone, and frustrating.</p></li>
+      <li><span class="tl-num">2</span><h3>Built my first website</h3><p>I turned the problem into an attendance calculator website — attendancecalculators.net — so students could check the 75% rule in seconds instead of counting classes by hand.</p></li>
+      <li><span class="tl-num">3</span><h3>Learned SEO by ranking the sites I built</h3><p>No courses-first theory — I learned SEO by making that first site rank: keywords, content, technical SEO and honest trial and error.</p></li>
+      <li><span class="tl-num">4</span><h3>Grew to 4 websites — two at #1 on Google</h3><p>A Bible verse generator, an elf name generator and a Turkish Minecraft APK guide site followed. Two of them reached #1 on Google for their own names.</p></li>
+      <li><span class="tl-num">5</span><h3>Added Local SEO and client services</h3><p>Local SEO, Google Business Profile work, link building, content writing, Google and Meta Ads, Pinterest marketing and Amazon affiliate services.</p></li>
+      <li><span class="tl-num">6</span><h3>Today: helping local businesses worldwide</h3><p>I work with clients worldwide — US first — with a free audit before any paid work and replies within 24 hours.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="about-skills">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Skills &amp; Platforms</span>
+      <h2>What I work with every day</h2>
+      <p>SEO, Local SEO, Google Business Profile optimisation, link building, content writing, WordPress website design, Google Ads, Meta Ads, Etsy SEO, Pinterest marketing and Amazon affiliate marketing.</p>
+    </div>
+    <div class="strip-chips">
+      <span class="pchip">WordPress</span><span class="pchip">Google Business Profile</span><span class="pchip">Google Search Console</span><span class="pchip">Rank Math</span><span class="pchip">Google Ads</span><span class="pchip">Meta Ads</span><span class="pchip">Pinterest</span><span class="pchip">Amazon</span><span class="pchip">Etsy</span>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="about-why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Why Hire Us</span>
+      <h2>Why businesses hire Zain</h2>
+    </div>
+    <ul class="checklist" style="max-width:860px">
+      <li><div><strong>You talk directly to the person who does the work</strong><span>No agency middleman, nothing lost in translation.</span></div></li>
+      <li><div><strong>Proof you can check yourself</strong><span>Live websites ranking #1 on Google and writing samples you can read before you pay anything.</span></div></li>
+      <li><div><strong>Free audit first</strong><span>Know exactly what’s wrong before spending a dollar — no contracts, no lock-in.</span></div></li>
+      <li><div><strong>Everything under one roof</strong><span>SEO, Local SEO, content, ads, Pinterest and Amazon affiliate from one specialist, with fast, honest communication — replies within 24 hours.</span></div></li>
+    </ul>
+    <div style="margin-top:28px; display:flex; gap:12px; flex-wrap:wrap">
+      <a class="btn btn-primary btn-lg" href="#contact">Get My Free Audit →</a>
+      <a class="btn btn-ghost btn-lg" href="#services-projects">See Services &amp; Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND (About) -->
+<section class="cta-band">
+  <div class="wrap cta-in">
+    <div><h2>Get your free SEO audit — no contract, no pressure</h2><p>Tell me about your business and I’ll show you exactly what’s holding your Google visibility back — and what I’d fix first.</p></div>
+    <a class="btn btn-lg" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">Chat on WhatsApp →</a>
+  </div>
+</section>
+</div><!-- /page-about -->
+
+<!-- ==================== PAGE: SERVICES & PROJECTS ==================== -->
+<div class="page" id="page-services-projects" data-page="services-projects">
+<!-- SERVICES (full detail) -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Services &amp; Projects</span>
+      <h2 style="font-size:clamp(32px,4.6vw,46px)">Our Services &amp; Projects</h2>
+      <p>Every service in full detail, followed by the projects and writing samples that prove it. Pick a single service or combine them — every service includes clear deliverables, honest timelines, and reporting you can actually understand.</p>
     </div>
     <div class="answer-block">
       <h3>What are the best SEO services for a local business?</h3>
@@ -748,7 +1008,7 @@ footer a:hover{text-decoration:underline}
         <div class="service-link"><a href="#contact" data-service="Amazon Affiliate Marketing">Inquire about this service →</a></div>
         <div class="direct-actions"><a class="wa" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">WhatsApp</a><a class="ml" href="mailto:malikzaini6788@gmail.com?subject=SEO%20Project%20Enquiry">Email</a></div>
       </article>
-      <article class="card service-card" style="background:linear-gradient(160deg, rgba(77,141,255,.14), rgba(53,197,177,.08));">
+      <article class="card service-card" style="background:linear-gradient(160deg, rgba(47,125,255,.10), rgba(23,184,144,.07));">
         <div class="icon">💬</div>
         <h3>Not sure what you need?</h3>
         <p>Start with a free discussion. Tell me your business and your goal — I’ll tell you honestly what would help most, and what can wait.</p>
@@ -760,162 +1020,8 @@ footer a:hover{text-decoration:underline}
   </div>
 </section>
 
-<!-- WRITING SAMPLES — ZAIN'S REAL WORK AS VIEWABLE PDFs -->
-<section class="section" id="samples">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Content Writing</span>
-      <h2>Writing Samples — Read My Actual Work</h2>
-      <p>Don’t take my word for it — read the work. These are real writing samples: articles I have written, published and provided as PDFs so every visitor can open and read the actual article, not a screenshot or a summary.</p>
-    </div>
-    <div class="grid grid-3">
-      <article class="slot live sample-card">
-        <div class="pv" aria-hidden="true">
-          <div class="pv-bg pv-keto"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
-          <div class="pv-in">
-            <div class="pv-top">
-              <div class="pv-emoji">💧</div>
-              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FFFFFF"/><rect x="34" y="6" width="18" height="40" rx="5" fill="#2E7D46"/><rect x="39" y="2" width="8" height="7" rx="2" fill="#35C5B1"/><rect x="37.5" y="18" width="11" height="14" rx="2" fill="#EAF7EF"/><path d="M10 14l1.7 3.4L15.5 19l-3.8 1.6L10 24l-1.7-3.4L4.5 19l3.8-1.6zM20 34l1.2 2.4 2.7.4-2 1.9.5 2.7L20 40.2l-2.4 1.2.5-2.7-2-1.9 2.7-.4zM68 36l1.2 2.4 2.7.4-2 1.9.5 2.7L68 42.2l-2.4 1.2.5-2.7-2-1.9 2.7-.4z" fill="#F2B33D"/></svg></div>
-            </div>
-            <div class="pv-title">KetoSana Review</div>
-            <div class="pv-sub">Amazon Affiliate · Product Review</div>
-          </div>
-        </div>
-        <span class="tag">Amazon Affiliate / Product Review</span>
-        <h3>KetoSana Review: Premium Liquid Weight Management Drops</h3>
-        <p>A full product review article written for affiliate marketing: benefits, how it works, key features, honest usage notes and FAQs in a clear, reader-first structure.</p>
-        <div class="writing-actions">
-          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/KetoSana_Review__client_work.pdf" target="_blank" rel="noopener">View PDF</a>
-          <a class="btn btn-ghost" href="#contact" data-service="Amazon Affiliate Marketing">Hire me for this</a>
-        </div>
-      </article>
-      <article class="slot live sample-card">
-        <div class="pv" aria-hidden="true">
-          <div class="pv-bg pv-minecraft"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
-          <div class="pv-in">
-            <div class="pv-top">
-              <div class="pv-emoji">⛏️</div>
-              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#F4FBEA"/><rect x="8" y="8" width="16" height="16" fill="#7CB342"/><rect x="24" y="8" width="16" height="16" fill="#5B8C2A"/><rect x="8" y="24" width="16" height="16" fill="#6D4C2F"/><rect x="24" y="24" width="16" height="16" fill="#8A6642"/><rect x="48" y="10" width="30" height="5" rx="2.5" fill="#33501A"/><rect x="48" y="20" width="24" height="5" rx="2.5" fill="#7CB342"/><rect x="48" y="30" width="28" height="5" rx="2.5" fill="#A9C48A"/></svg></div>
-            </div>
-            <div class="pv-title">Minecraft APK Son Sürüm</div>
-            <div class="pv-sub">Turkish SEO Article</div>
-          </div>
-        </div>
-        <span class="tag teal">Multilingual SEO Writing (Turkish)</span>
-        <h3>Minecraft APK Son Sürüm — Turkish SEO Article</h3>
-        <p>A complete Turkish-language SEO guide with an info table, download/install steps, system requirements and safety details — proof Zain writes ranking content in more than one language.</p>
-        <div class="writing-actions">
-          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/multilanguage_client_work.pdf" target="_blank" rel="noopener">View PDF</a>
-          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
-        </div>
-      </article>
-      <article class="slot live sample-card">
-        <div class="pv" aria-hidden="true">
-          <div class="pv-bg pv-jackal"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
-          <div class="pv-in">
-            <div class="pv-top">
-              <div class="pv-emoji">🐺</div>
-              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FFF9EC"/><text x="10" y="19" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#A9711F">1.</text><rect x="24" y="11" width="44" height="6" rx="3" fill="#E8A33D"/><text x="10" y="33" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#A9711F">2.</text><rect x="24" y="25" width="36" height="6" rx="3" fill="#D9BE7E"/><text x="10" y="47" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#A9711F">3.</text><rect x="24" y="39" width="48" height="6" rx="3" fill="#C99B2F"/></svg></div>
-            </div>
-            <div class="pv-title">100+ Funny Jackal Names</div>
-            <div class="pv-sub">Generator · Entertainment</div>
-          </div>
-        </div>
-        <span class="tag">Generator / Entertainment Content</span>
-        <h3>100+ Funny Jackal Names Generator</h3>
-        <p>A fun, human-voiced list article with 100+ name ideas, written to rank and to keep readers scrolling.</p>
-        <div class="writing-actions">
-          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/100__Funny_Jackal_Names_Generator.pdf" target="_blank" rel="noopener">View PDF</a>
-          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
-        </div>
-      </article>
-      <article class="slot live sample-card">
-        <div class="pv" aria-hidden="true">
-          <div class="pv-bg pv-bible"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
-          <div class="pv-in">
-            <div class="pv-top">
-              <div class="pv-emoji">🕊️</div>
-              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FFF7E6"/><text x="9" y="22" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#C99B2F">“</text><rect x="24" y="11" width="52" height="5" rx="2.5" fill="#8A6D2F"/><rect x="24" y="21" width="44" height="5" rx="2.5" fill="#C4A55A"/><rect x="24" y="31" width="50" height="5" rx="2.5" fill="#D9BE7E"/><rect x="10" y="40" width="26" height="5" rx="2.5" fill="#35C5B1"/></svg></div>
-            </div>
-            <div class="pv-title">Bible Verses for Someone Who Passed Away</div>
-            <div class="pv-sub">Faith &amp; Comfort Writing</div>
-          </div>
-        </div>
-        <span class="tag teal">Faith &amp; Comfort Writing</span>
-        <h3>25+ Powerful Bible Verses for Someone Who Passed Away</h3>
-        <p>A warm, comforting long-form article answering a painful search with care, structure and clear headings.</p>
-        <div class="writing-actions">
-          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/25__Powerful_Bible_Verses_for_Someone_Who_Passed_Away_client_3.pdf" target="_blank" rel="noopener">View PDF</a>
-          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
-        </div>
-      </article>
-      <article class="slot live sample-card">
-        <div class="pv" aria-hidden="true">
-          <div class="pv-bg pv-hair"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
-          <div class="pv-in">
-            <div class="pv-top">
-              <div class="pv-emoji">💇‍♀️</div>
-              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FFF2F7"/><rect x="8" y="8" width="20" height="16" rx="3" fill="#F28BB4"/><rect x="33" y="8" width="20" height="16" rx="3" fill="#B23A72"/><rect x="58" y="8" width="20" height="16" rx="3" fill="#F2B33D"/><rect x="8" y="28" width="20" height="16" rx="3" fill="#35C5B1"/><rect x="33" y="28" width="20" height="16" rx="3" fill="#F6C6DA"/><rect x="58" y="28" width="20" height="16" rx="3" fill="#D96C9B"/></svg></div>
-            </div>
-            <div class="pv-title">Half Up Half Down Haircut Ideas</div>
-            <div class="pv-sub">Beauty · Pinterest-Friendly</div>
-          </div>
-        </div>
-        <span class="tag">Beauty &amp; Lifestyle (Pinterest-friendly)</span>
-        <h3>25 Half Up Half Down Haircut Ideas for Women</h3>
-        <p>A practical beauty guide with real technique, time and difficulty for each style — the kind of content that performs on Pinterest and Google.</p>
-        <div class="writing-actions">
-          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/25_Half_Up_Half_Down_Haircut_Ideas_for_Women_client_2.pdf" target="_blank" rel="noopener">View PDF</a>
-          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
-        </div>
-      </article>
-      <article class="slot live sample-card">
-        <div class="pv" aria-hidden="true">
-          <div class="pv-bg pv-dog"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
-          <div class="pv-in">
-            <div class="pv-top">
-              <div class="pv-emoji">🐾</div>
-              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FDF6E3"/><text x="12" y="24" font-family="Georgia,serif" font-size="20" font-weight="800" fill="#1F6F8B">7</text><rect x="30" y="10" width="46" height="5" rx="2.5" fill="#1F6F8B"/><rect x="30" y="19" width="38" height="5" rx="2.5" fill="#7FB3C8"/><rect x="12" y="32" width="64" height="5" rx="2.5" fill="#D9BE7E"/><rect x="12" y="41" width="50" height="5" rx="2.5" fill="#E5D3A0"/></svg></div>
-            </div>
-            <div class="pv-title">Spiritual Meaning of Dog Peeing on You</div>
-            <div class="pv-sub">Spiritual Meaning Writing</div>
-          </div>
-        </div>
-        <span class="tag teal">Spiritual Meaning Writing</span>
-        <h3>7 Spiritual Meanings of Dog Peeing on You</h3>
-        <p>A search-intent-perfect explainer with symbolism, scenarios and clear short answers.</p>
-        <div class="writing-actions">
-          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/7_Spiritual_Meaning_of_Dog_Peeing_on_You__work_sample.pdf" target="_blank" rel="noopener">View PDF</a>
-          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
-        </div>
-      </article>
-      <article class="slot live sample-card">
-        <div class="pv" aria-hidden="true">
-          <div class="pv-bg pv-cat"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
-          <div class="pv-in">
-            <div class="pv-top">
-              <div class="pv-emoji">🐈‍⬛</div>
-              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#23272F"/><path d="M62 8a11 11 0 1 0 8 19 13 13 0 0 1-8-19z" fill="#F2D492"/><path d="M14 12l1.2 2.6 2.8.4-2 2 .5 2.8L14 18.4l-2.5 1.4.5-2.8-2-2 2.8-.4zM24 34l1 2.1 2.3.3-1.7 1.6.4 2.3-2-1.1-2 1.1.4-2.3-1.7-1.6 2.3-.3zM44 40l.9 1.9 2.1.3-1.5 1.5.4 2.1-1.9-1-1.9 1 .4-2.1-1.5-1.5 2.1-.3z" fill="#C99B2F"/><rect x="10" y="42" width="30" height="4" rx="2" fill="#5A5340"/></svg></div>
-            </div>
-            <div class="pv-title">Seeing a Black Cat in a Dream</div>
-            <div class="pv-sub">Dream Interpretation</div>
-          </div>
-        </div>
-        <span class="tag">Dream Interpretation Writing</span>
-        <h3>Seeing a Black Cat in a Dream: Christian Meaning + 7 Biblical Insights</h3>
-        <p>A quick-answer-first article with a summary table, scenarios and scripture-based insights — built for featured snippets and AI answers.</p>
-        <div class="writing-actions">
-          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/Seeing_Black_Cat_in_a_Dream__client_work.pdf" target="_blank" rel="noopener">View PDF</a>
-          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
-        </div>
-      </article>
-    </div>
-    <p class="samples-note"><strong>Want to see this writing live?</strong> You can also see this writing live on <a href="https://attendancecalculators.net/" target="_blank" rel="noopener" style="color:var(--blue); font-weight:600">attendancecalculators.net</a>, <a href="https://randombibleversegenerator.org/" target="_blank" rel="noopener" style="color:var(--blue); font-weight:600">randombibleversegenerator.org</a> and <a href="https://elfgeneratorname.com/" target="_blank" rel="noopener" style="color:var(--blue); font-weight:600">elfgeneratorname.com</a> — shown in the Work section below. Need writing like this for your business? <a href="#contact" data-service="SEO Content Writing" style="color:var(--blue); font-weight:600">Hire me for content writing →</a></p>
-  </div>
-</section>
-
-<!-- WORK / PORTFOLIO — EMPTY SLOTS FOR ZAIN'S REAL WORK -->
-<section class="section light" id="work">
+<!-- PROJECTS -->
+<section class="section alt" id="work">
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Selected Work</span>
@@ -1176,180 +1282,208 @@ footer a:hover{text-decoration:underline}
         <div class="slot-meta"><span class="slot-badge">Etsy</span><span class="slot-badge">Shop SEO</span></div>
       </article>
     </div>
-    <p style="color:var(--ink-muted); margin-top:20px; font-size:15px">Have a project in mind? <a href="#contact" style="color:#2456A6; font-weight:600; text-decoration:none">Start with a free discussion →</a></p>
+    <p style="color:var(--muted); margin-top:20px; font-size:15px">Have a project in mind? <a href="#contact" style="color:var(--blue-dark); font-weight:600; text-decoration:none">Start with a free discussion →</a></p>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section class="section alt" id="process">
+<!-- WRITING SAMPLES -->
+<section class="section" id="samples">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">How I Work</span>
-      <h2>A clear process — no guesswork</h2>
-      <p>You always know what’s happening, what it costs, and what comes next. Here’s how every project runs.</p>
+      <span class="kicker">Content Writing</span>
+      <h2>Writing Samples — Read My Actual Work</h2>
+      <p>Don’t take my word for it — read the work. These are real writing samples: articles I have written, published and provided as PDFs so every visitor can open and read the actual article, not a screenshot or a summary.</p>
     </div>
-    <div class="process">
-      <div class="step"><div class="step-num">1</div><h3>Discover</h3><p>We talk about your business, customers, competitors and goals. I listen first, recommend second.</p></div>
-      <div class="step"><div class="step-num">2</div><h3>Audit</h3><p>I review your website, Google profile, content and visibility to find what’s holding you back.</p></div>
-      <div class="step"><div class="step-num">3</div><h3>Plan</h3><p>You get a prioritized plan with deliverables, timeline and a clear quote — before any work starts.</p></div>
-      <div class="step"><div class="step-num">4</div><h3>Execute</h3><p>I do the work: optimization, content, website changes or campaigns — with updates as I go.</p></div>
-      <div class="step"><div class="step-num">5</div><h3>Measure &amp; Improve</h3><p>Simple reporting on visibility and inquiries, plus honest next steps to keep improving.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT + WHY -->
-<section class="section light" id="about">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">About Zain</span>
-      <h2>Why work with Zain?</h2>
-      <p>A specialist who does the work himself, explains it plainly, and treats your budget like his own.</p>
-    </div>
-    <div class="why-grid">
-      <div class="about-box">
-        <h3>Hi, I’m Zain Naseer</h3>
-        <p>I’m an SEO specialist with 4 years of experience, focused on helping businesses improve their online visibility. With a BSCS background, I combine technical understanding with practical marketing — SEO strategy, local search, Google Business Profile optimization, content, and WordPress.</p>
-        <p>I also offer related services in Google Ads, Meta Ads, website development, Etsy optimization, Pinterest marketing and Amazon affiliate marketing. My focus is simple: practical recommendations, clear communication, and work that supports real business goals.</p>
-        <p>I build and run websites end-to-end — content, SEO and publishing — so I understand what business owners actually deal with day to day, not just theory.</p>
-        <div class="chips">
-          <span class="chip">BSCS</span><span class="chip">4 Years in SEO</span><span class="chip">Local SEO Specialist</span><span class="chip">WordPress</span>
+    <div class="grid grid-3">
+      <article class="slot live sample-card">
+        <div class="pv" aria-hidden="true">
+          <div class="pv-bg pv-keto"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
+          <div class="pv-in">
+            <div class="pv-top">
+              <div class="pv-emoji">💧</div>
+              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FFFFFF"/><rect x="34" y="6" width="18" height="40" rx="5" fill="#2E7D46"/><rect x="39" y="2" width="8" height="7" rx="2" fill="#35C5B1"/><rect x="37.5" y="18" width="11" height="14" rx="2" fill="#EAF7EF"/><path d="M10 14l1.7 3.4L15.5 19l-3.8 1.6L10 24l-1.7-3.4L4.5 19l3.8-1.6zM20 34l1.2 2.4 2.7.4-2 1.9.5 2.7L20 40.2l-2.4 1.2.5-2.7-2-1.9 2.7-.4zM68 36l1.2 2.4 2.7.4-2 1.9.5 2.7L68 42.2l-2.4 1.2.5-2.7-2-1.9 2.7-.4z" fill="#F2B33D"/></svg></div>
+            </div>
+            <div class="pv-title">KetoSana Review</div>
+            <div class="pv-sub">Amazon Affiliate · Product Review</div>
+          </div>
         </div>
-      </div>
-      <ul class="checklist">
-        <li><div><strong>You work directly with me</strong><span>No account managers, no hand-offs. The person you talk to is the person doing the work.</span></div></li>
-        <li><div><strong>Honest, white-hat methods only</strong><span>No fake reviews, no spam links, no tricks that risk your Google profile or website.</span></div></li>
-        <li><div><strong>SEO, website &amp; content — connected</strong><span>Your profile, pages, content and ads are planned together, so everything pulls in one direction.</span></div></li>
-        <li><div><strong>Clear reporting, plain language</strong><span>What was done, what changed, and what’s next — without jargon or inflated numbers.</span></div></li>
-      </ul>
+        <span class="tag">Amazon Affiliate / Product Review</span>
+        <h3>KetoSana Review: Premium Liquid Weight Management Drops</h3>
+        <p>A full product review article written for affiliate marketing: benefits, how it works, key features, honest usage notes and FAQs in a clear, reader-first structure.</p>
+        <div class="writing-actions">
+          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/KetoSana_Review__client_work.pdf" target="_blank" rel="noopener">View PDF</a>
+          <a class="btn btn-ghost" href="#contact" data-service="Amazon Affiliate Marketing">Hire me for this</a>
+        </div>
+      </article>
+      <article class="slot live sample-card">
+        <div class="pv" aria-hidden="true">
+          <div class="pv-bg pv-minecraft"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
+          <div class="pv-in">
+            <div class="pv-top">
+              <div class="pv-emoji">⛏️</div>
+              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#F4FBEA"/><rect x="8" y="8" width="16" height="16" fill="#7CB342"/><rect x="24" y="8" width="16" height="16" fill="#5B8C2A"/><rect x="8" y="24" width="16" height="16" fill="#6D4C2F"/><rect x="24" y="24" width="16" height="16" fill="#8A6642"/><rect x="48" y="10" width="30" height="5" rx="2.5" fill="#33501A"/><rect x="48" y="20" width="24" height="5" rx="2.5" fill="#7CB342"/><rect x="48" y="30" width="28" height="5" rx="2.5" fill="#A9C48A"/></svg></div>
+            </div>
+            <div class="pv-title">Minecraft APK Son Sürüm</div>
+            <div class="pv-sub">Turkish SEO Article</div>
+          </div>
+        </div>
+        <span class="tag teal">Multilingual SEO Writing (Turkish)</span>
+        <h3>Minecraft APK Son Sürüm — Turkish SEO Article</h3>
+        <p>A complete Turkish-language SEO guide with an info table, download/install steps, system requirements and safety details — proof Zain writes ranking content in more than one language.</p>
+        <div class="writing-actions">
+          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/multilanguage_client_work.pdf" target="_blank" rel="noopener">View PDF</a>
+          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
+        </div>
+      </article>
+      <article class="slot live sample-card">
+        <div class="pv" aria-hidden="true">
+          <div class="pv-bg pv-jackal"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
+          <div class="pv-in">
+            <div class="pv-top">
+              <div class="pv-emoji">🐺</div>
+              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FFF9EC"/><text x="10" y="19" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#A9711F">1.</text><rect x="24" y="11" width="44" height="6" rx="3" fill="#E8A33D"/><text x="10" y="33" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#A9711F">2.</text><rect x="24" y="25" width="36" height="6" rx="3" fill="#D9BE7E"/><text x="10" y="47" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#A9711F">3.</text><rect x="24" y="39" width="48" height="6" rx="3" fill="#C99B2F"/></svg></div>
+            </div>
+            <div class="pv-title">100+ Funny Jackal Names</div>
+            <div class="pv-sub">Generator · Entertainment</div>
+          </div>
+        </div>
+        <span class="tag">Generator / Entertainment Content</span>
+        <h3>100+ Funny Jackal Names Generator</h3>
+        <p>A fun, human-voiced list article with 100+ name ideas, written to rank and to keep readers scrolling.</p>
+        <div class="writing-actions">
+          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/100__Funny_Jackal_Names_Generator.pdf" target="_blank" rel="noopener">View PDF</a>
+          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
+        </div>
+      </article>
+      <article class="slot live sample-card">
+        <div class="pv" aria-hidden="true">
+          <div class="pv-bg pv-bible"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
+          <div class="pv-in">
+            <div class="pv-top">
+              <div class="pv-emoji">🕊️</div>
+              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FFF7E6"/><text x="9" y="22" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#C99B2F">“</text><rect x="24" y="11" width="52" height="5" rx="2.5" fill="#8A6D2F"/><rect x="24" y="21" width="44" height="5" rx="2.5" fill="#C4A55A"/><rect x="24" y="31" width="50" height="5" rx="2.5" fill="#D9BE7E"/><rect x="10" y="40" width="26" height="5" rx="2.5" fill="#35C5B1"/></svg></div>
+            </div>
+            <div class="pv-title">Bible Verses for Someone Who Passed Away</div>
+            <div class="pv-sub">Faith &amp; Comfort Writing</div>
+          </div>
+        </div>
+        <span class="tag teal">Faith &amp; Comfort Writing</span>
+        <h3>25+ Powerful Bible Verses for Someone Who Passed Away</h3>
+        <p>A warm, comforting long-form article answering a painful search with care, structure and clear headings.</p>
+        <div class="writing-actions">
+          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/25__Powerful_Bible_Verses_for_Someone_Who_Passed_Away_client_3.pdf" target="_blank" rel="noopener">View PDF</a>
+          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
+        </div>
+      </article>
+      <article class="slot live sample-card">
+        <div class="pv" aria-hidden="true">
+          <div class="pv-bg pv-hair"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
+          <div class="pv-in">
+            <div class="pv-top">
+              <div class="pv-emoji">💇‍♀️</div>
+              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FFF2F7"/><rect x="8" y="8" width="20" height="16" rx="3" fill="#F28BB4"/><rect x="33" y="8" width="20" height="16" rx="3" fill="#B23A72"/><rect x="58" y="8" width="20" height="16" rx="3" fill="#F2B33D"/><rect x="8" y="28" width="20" height="16" rx="3" fill="#35C5B1"/><rect x="33" y="28" width="20" height="16" rx="3" fill="#F6C6DA"/><rect x="58" y="28" width="20" height="16" rx="3" fill="#D96C9B"/></svg></div>
+            </div>
+            <div class="pv-title">Half Up Half Down Haircut Ideas</div>
+            <div class="pv-sub">Beauty · Pinterest-Friendly</div>
+          </div>
+        </div>
+        <span class="tag">Beauty &amp; Lifestyle (Pinterest-friendly)</span>
+        <h3>25 Half Up Half Down Haircut Ideas for Women</h3>
+        <p>A practical beauty guide with real technique, time and difficulty for each style — the kind of content that performs on Pinterest and Google.</p>
+        <div class="writing-actions">
+          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/25_Half_Up_Half_Down_Haircut_Ideas_for_Women_client_2.pdf" target="_blank" rel="noopener">View PDF</a>
+          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
+        </div>
+      </article>
+      <article class="slot live sample-card">
+        <div class="pv" aria-hidden="true">
+          <div class="pv-bg pv-dog"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
+          <div class="pv-in">
+            <div class="pv-top">
+              <div class="pv-emoji">🐾</div>
+              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#FDF6E3"/><text x="12" y="24" font-family="Georgia,serif" font-size="20" font-weight="800" fill="#1F6F8B">7</text><rect x="30" y="10" width="46" height="5" rx="2.5" fill="#1F6F8B"/><rect x="30" y="19" width="38" height="5" rx="2.5" fill="#7FB3C8"/><rect x="12" y="32" width="64" height="5" rx="2.5" fill="#D9BE7E"/><rect x="12" y="41" width="50" height="5" rx="2.5" fill="#E5D3A0"/></svg></div>
+            </div>
+            <div class="pv-title">Spiritual Meaning of Dog Peeing on You</div>
+            <div class="pv-sub">Spiritual Meaning Writing</div>
+          </div>
+        </div>
+        <span class="tag teal">Spiritual Meaning Writing</span>
+        <h3>7 Spiritual Meanings of Dog Peeing on You</h3>
+        <p>A search-intent-perfect explainer with symbolism, scenarios and clear short answers.</p>
+        <div class="writing-actions">
+          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/7_Spiritual_Meaning_of_Dog_Peeing_on_You__work_sample.pdf" target="_blank" rel="noopener">View PDF</a>
+          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
+        </div>
+      </article>
+      <article class="slot live sample-card">
+        <div class="pv" aria-hidden="true">
+          <div class="pv-bg pv-cat"></div><span class="pv-cta">Read the PDF →</span><span class="pv-deco d1"></span><span class="pv-deco d2"></span>
+          <div class="pv-in">
+            <div class="pv-top">
+              <div class="pv-emoji">🐈‍⬛</div>
+              <div class="pv-mock"><svg width="86" height="52" viewBox="0 0 86 52"><rect x="1" y="1" width="84" height="50" rx="6" fill="#23272F"/><path d="M62 8a11 11 0 1 0 8 19 13 13 0 0 1-8-19z" fill="#F2D492"/><path d="M14 12l1.2 2.6 2.8.4-2 2 .5 2.8L14 18.4l-2.5 1.4.5-2.8-2-2 2.8-.4zM24 34l1 2.1 2.3.3-1.7 1.6.4 2.3-2-1.1-2 1.1.4-2.3-1.7-1.6 2.3-.3zM44 40l.9 1.9 2.1.3-1.5 1.5.4 2.1-1.9-1-1.9 1 .4-2.1-1.5-1.5 2.1-.3z" fill="#C99B2F"/><rect x="10" y="42" width="30" height="4" rx="2" fill="#5A5340"/></svg></div>
+            </div>
+            <div class="pv-title">Seeing a Black Cat in a Dream</div>
+            <div class="pv-sub">Dream Interpretation</div>
+          </div>
+        </div>
+        <span class="tag">Dream Interpretation Writing</span>
+        <h3>Seeing a Black Cat in a Dream: Christian Meaning + 7 Biblical Insights</h3>
+        <p>A quick-answer-first article with a summary table, scenarios and scripture-based insights — built for featured snippets and AI answers.</p>
+        <div class="writing-actions">
+          <a class="btn btn-primary" href="https://zainimalix908.github.io/Website/assets/samples/Seeing_Black_Cat_in_a_Dream__client_work.pdf" target="_blank" rel="noopener">View PDF</a>
+          <a class="btn btn-ghost" href="#contact" data-service="SEO Content Writing">Hire me for this</a>
+        </div>
+      </article>
     </div>
+    <p class="samples-note"><strong>Want to see this writing live?</strong> You can also see this writing live on <a href="https://attendancecalculators.net/" target="_blank" rel="noopener" style="color:var(--blue-dark); font-weight:600">attendancecalculators.net</a>, <a href="https://randombibleversegenerator.org/" target="_blank" rel="noopener" style="color:var(--blue-dark); font-weight:600">randombibleversegenerator.org</a> and <a href="https://elfgeneratorname.com/" target="_blank" rel="noopener" style="color:var(--blue-dark); font-weight:600">elfgeneratorname.com</a> — shown in the projects above. Need writing like this for your business? <a href="#contact" data-service="SEO Content Writing" style="color:var(--blue-dark); font-weight:600">Hire me for content writing →</a></p>
   </div>
 </section>
 
-<!-- PACKAGES -->
-<section class="section alt" id="packages">
+<!-- PACKAGES NOTE + CTA -->
+<section class="section alt" id="sp-packages">
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Ways To Start</span>
-      <h2>Packages — priced for your project</h2>
-      <p>Every business is different, so pricing is quoted per project after a short discussion. No hidden fees, and ad spend is always separate from management fees.</p>
+      <h2>Packages for every service</h2>
+      <p>Every service above is also available as part of a package — an SEO Visibility Audit, a Local Visibility Setup, a Website Growth Foundation, or an ongoing Growth Partnership. Pricing is quoted per project after a short discussion, with no hidden fees. See the full packages on the Home page, or start with a free audit.</p>
     </div>
-    <div class="grid grid-4">
-      <article class="card pkg"><h3>SEO Visibility Audit</h3><div class="price">Request a Quote</div><p style="color:var(--muted); font-size:14.5px; margin-top:6px">Find out exactly what’s holding your visibility back.</p><ul><li>Website &amp; SEO audit</li><li>Google profile review</li><li>Competitor snapshot</li><li>Prioritized action report</li></ul><a class="btn btn-ghost" href="#contact" data-service="SEO Visibility Audit (Package)">Request a Quote</a></article>
-      <article class="card pkg"><h3>Local Visibility Setup</h3><div class="price">Request a Quote</div><p style="color:var(--muted); font-size:14.5px; margin-top:6px">Get your local presence set up properly, once.</p><ul><li>GBP full optimization</li><li>Citation consistency</li><li>Local page recommendations</li><li>Review workflow setup</li></ul><a class="btn btn-primary" href="#contact" data-service="Local Visibility Setup (Package)">Request a Quote</a></article>
-      <article class="card pkg"><h3>Website Growth Foundation</h3><div class="price">Request a Quote</div><p style="color:var(--muted); font-size:14.5px; margin-top:6px">A fast, SEO-ready website built to turn visits into inquiries.</p><ul><li>WordPress build / redesign</li><li>On-page SEO setup</li><li>Speed &amp; mobile optimization</li><li>Forms &amp; analytics setup</li></ul><a class="btn btn-ghost" href="#contact" data-service="Website Growth Foundation (Package)">Request a Quote</a></article>
-      <article class="card pkg"><h3>Growth Partnership</h3><div class="price">Request a Quote</div><p style="color:var(--muted); font-size:14.5px; margin-top:6px">Ongoing SEO, content and reporting — scoped monthly.</p><ul><li>Monthly SEO &amp; content work</li><li>Link building outreach</li><li>Ads management (optional)</li><li>Monthly progress report</li></ul><a class="btn btn-ghost" href="#contact" data-service="Growth Partnership (Package)">Request a Quote</a></article>
+    <div style="display:flex; gap:12px; flex-wrap:wrap">
+      <a class="btn btn-primary btn-lg" href="#home">See packages on Home →</a>
+      <a class="btn btn-ghost btn-lg" href="#contact">Get My Free Audit →</a>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section light" id="faq">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Questions</span>
-      <h2>Frequently asked questions</h2>
-      <p>Straight answers, before you spend anything.</p>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">How long does SEO take to show results?<span>+</span></button><div class="faq-a">SEO usually takes a few months of consistent work to show meaningful ranking and traffic improvements. Small fixes — like a corrected Google Business Profile — can help quickly, and I’ll show you progress monthly so you can see movement, not just promises.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you guarantee a #1 ranking on Google?<span>+</span></button><div class="faq-a">No — no honest SEO can guarantee a #1 ranking on Google. Rankings depend on Google, your market and your competitors. What I guarantee is proper, white-hat work, clear priorities, and honest reporting on what improves.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you improve my local / Maps visibility?<span>+</span></button><div class="faq-a">Yes — local and Maps visibility is my specialty. I optimize your Google Business Profile, categories, services, photos, citations and local pages so nearby customers are more likely to find and choose you when they search.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you build and manage WordPress websites?<span>+</span></button><div class="faq-a">Yes — I build and redesign WordPress websites. They are fast, mobile-friendly and SEO-ready, and I can help with ongoing updates and optimization if you need it.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">How do you report progress?<span>+</span></button><div class="faq-a">You get a simple, plain-language report covering what was done and what comes next. It includes work completed, visibility and inquiry changes where measurable, and the next steps planned — no padded reports or vanity numbers.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you audit my website / profile first?<span>+</span></button><div class="faq-a">Yes — most projects start with an audit. Send me your website and Google profile link through the contact form and I’ll review where you stand and what I’d fix first.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">What do you need from me to start?<span>+</span></button><div class="faq-a">To start, I only need your business details, your website if you have one, and any access you’re comfortable sharing. We agree the scope and quote first — nothing starts without your approval.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer one-off projects, or only monthly work?<span>+</span></button><div class="faq-a">Both — one-off projects and monthly work are available. Audits, profile setup and website builds work well as one-off projects, while ongoing SEO, content and ads are usually monthly. We’ll pick whichever fits your goal and budget.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">What makes an SEO service the best choice for a small business?<span>+</span></button><div class="faq-a">The best SEO service for a small business is one that focuses on local customers, clear reporting and work matched to your budget. That means Google Business Profile optimisation, local keyword targeting, quality link building and helpful content — combined with honest timelines and no guaranteed-ranking promises.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer Pinterest marketing?<span>+</span></button><div class="faq-a">Yes — I offer Pinterest marketing and Pinterest SEO. That includes keyword-rich boards and pin titles, scroll-stopping pin designs, Idea Pins, and traffic strategies that send Pinterest visitors to blogs, Etsy shops and affiliate sites. Beauty, home, food and lifestyle niches perform especially well — see my haircut guide in the writing samples.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you write Amazon affiliate review articles?<span>+</span></button><div class="faq-a">Yes — I write Amazon affiliate review articles and buying guides. I research buyer-intent keywords and write honest pros and cons readers trust, so the content sells without hype. You can read my KetoSana review in the writing samples to see the style.</div></div>
-    </div>
+<!-- CTA BAND (Services & Projects) -->
+<section class="cta-band">
+  <div class="wrap cta-in">
+    <div><h2>Get your free SEO audit — no contract, no pressure</h2><p>Tell me about your business and I’ll show you exactly what’s holding your Google visibility back — and what I’d fix first.</p></div>
+    <a class="btn btn-lg" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">Chat on WhatsApp →</a>
   </div>
 </section>
-
-<!-- CONTACT -->
-<section class="section alt" id="contact">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Contact</span>
-      <h2>Tell me about your project</h2>
-      <p>Tell me about your business and what you want to achieve. I’ll reply with honest feedback and clear next steps — no obligation.</p>
-    </div>
-    <div class="contact-direct">
-      <a class="btn btn-whatsapp btn-lg" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">WhatsApp — 0314 5623583</a>
-      <a class="btn btn-primary btn-lg" href="mailto:malikzaini6788@gmail.com?subject=SEO%20Project%20Enquiry">Email — malikzaini6788@gmail.com</a>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Contact details</h3>
-        <p>Three easy ways to reach me: tap WhatsApp or Email above — both open straight away — or send the form and your message lands directly in my inbox.</p>
-        <div class="contact-row"><div style="font-size:20px">✉️</div><div><strong>Email</strong><span><a href="mailto:malikzaini6788@gmail.com?subject=SEO%20Project%20Enquiry">malikzaini6788@gmail.com</a></span><br><button class="copy-btn" type="button" data-copy="malikzaini6788@gmail.com" data-label="Copy email">Copy email</button></div></div>
-        <div class="contact-row"><div style="font-size:20px">💬</div><div><strong>WhatsApp</strong><span><a href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">0314 5623583</a> — tap to chat with me directly.</span><br><button class="copy-btn" type="button" data-copy="0314 5623583" data-label="Copy number">Copy number</button></div></div>
-        <div class="contact-row"><div style="font-size:20px">in</div><div><strong>LinkedIn</strong><span>Connect with “Zain Naseer — SEO Specialist” on LinkedIn, or reach me by email for the direct profile link.</span></div></div>
-        <div class="contact-row"><div style="font-size:20px">🌍</div><div><strong>Working with</strong><span>Local businesses, startups &amp; service companies — remote, worldwide.</span></div></div>
-        <div class="avail" style="margin-top:20px"><i></i><span><strong>Free first discussion.</strong> Share your website and goals — I’ll tell you honestly what I’d do first.</span></div>
-        <div class="next-steps">
-          <h4>What happens next</h4>
-          <ol>
-            <li><span class="ns-num">1</span><div><strong>You send your inquiry</strong><p>Use the form or email me directly — it takes about two minutes. No commitment.</p></div></li>
-            <li><span class="ns-num">2</span><div><strong>I review &amp; reply honestly</strong><p>I look at your website and Google presence, then reply with clear feedback and what I’d fix first.</p></div></li>
-            <li><span class="ns-num">3</span><div><strong>We agree scope &amp; quote first</strong><p>You get a clear plan and price before any work starts. Nothing begins without your approval.</p></div></li>
-          </ol>
-        </div>
-      </div>
-      <form id="contactForm" action="https://formsubmit.co/malikzaini6788@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New Portfolio Enquiry — Zain Naseer">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <div class="form-grid">
-          <div class="field"><label for="fName">Your name *</label><input id="fName" name="name" type="text" autocomplete="name" placeholder="e.g. Ahmed Khan" required><span class="error">Please enter your name.</span></div>
-          <div class="field"><label for="fEmail">Work email *</label><input id="fEmail" name="email" type="email" autocomplete="email" placeholder="you@company.com" required><span class="error">Please enter a valid email address.</span></div>
-          <div class="field"><label for="fSite">Business / website <em>(optional)</em></label><input id="fSite" name="website" type="text" inputmode="url" placeholder="yourbusiness.com"></div>
-          <div class="field"><label for="fService">Service you need</label>
-            <select id="fService" name="service">
-              <option>Local SEO &amp; Google Business Profile</option><option>SEO Strategy &amp; Audits</option><option>Link Building</option>
-              <option>WordPress &amp; Website Design</option><option>SEO Content Writing</option><option>Google Ads</option>
-              <option>Meta Ads (Facebook &amp; Instagram)</option><option>Etsy Optimization</option>
-              <option>Pinterest Marketing</option><option>Amazon Affiliate Marketing</option>
-              <option>SEO Visibility Audit (Package)</option><option>Local Visibility Setup (Package)</option>
-              <option>Website Growth Foundation (Package)</option><option>Growth Partnership (Package)</option>
-              <option>Not sure yet — advise me</option>
-            </select>
-          </div>
-          <div class="field"><label for="fBudget">Approximate budget <em>(optional)</em></label>
-            <select id="fBudget" name="budget"><option>Prefer to discuss</option><option>Small one-off project</option><option>Monthly — getting started</option><option>Monthly — growth focused</option><option>Larger project</option></select>
-          </div>
-          <div class="field full"><label for="fMsg">Your goal / message *</label><textarea id="fMsg" name="message" placeholder="Tell me about your business, where you are located, and what you want more of — calls, visits, sales…" required></textarea><span class="error">Please add a short message about your project.</span></div>
-        </div>
-        <button class="btn btn-primary" type="submit" id="submitBtn" style="margin-top:18px; width:100%">Send My Message</button>
-        <p class="form-note">Your message is delivered straight to Zain’s inbox at malikzaini6788@gmail.com. Your details are only used to reply to your inquiry.</p>
-        <div class="success" id="formSuccess" role="status">✓ Thanks! Your message was sent — Zain will reply within 24 hours.</div>
-      </form>
-    </div>
-  </div>
-</section>
-
+</div><!-- /page-services-projects -->
 </main>
 
 <footer>
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="logo" href="#top" style="margin-bottom:6px"><span class="logo-mark">ZN</span><span>Zain Naseer<small>SEO &amp; Local Business Growth</small></span></a>
+        <a class="logo" href="#home" data-nav="home" style="margin-bottom:6px"><span class="logo-mark">ZN</span><span>Zain Naseer<small>SEO &amp; Local Business Growth</small></span></a>
         <p>SEO &amp; Local Business Growth Specialist (BSCS) helping businesses get found on Google, Maps and search — and turn that visibility into inquiries.</p>
         <div class="footer-direct">
           <a class="btn btn-whatsapp" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener">WhatsApp — 0314 5623583</a>
           <a class="btn btn-ghost" href="mailto:malikzaini6788@gmail.com?subject=SEO%20Project%20Enquiry">Email Me</a>
         </div>
       </div>
-      <div><h4>Services</h4>
-        <a href="#services">Local SEO &amp; GBP</a><a href="#services">SEO Strategy &amp; Audits</a><a href="#services">Link Building</a><a href="#services">WordPress &amp; Web Design</a><a href="#services">Content Writing</a>
+      <div><h4>Pages</h4>
+        <a href="#home" data-nav="home">Home</a><a href="#about" data-nav="about">About Us</a><a href="#services-projects" data-nav="services-projects">Services &amp; Projects</a><a href="#contact" data-nav="contact">Contact</a>
       </div>
-      <div><h4>More Services</h4>
-        <a href="#services">Google Ads</a><a href="#services">Meta Ads</a><a href="#services">Etsy Optimization</a><a href="#services">Pinterest Marketing</a><a href="#services">Amazon Affiliate Marketing</a><a href="#packages">Packages</a><a href="#faq">FAQ</a>
+      <div><h4>Services</h4>
+        <a href="#services-projects">Local SEO &amp; GBP</a><a href="#services-projects">SEO Strategy &amp; Audits</a><a href="#services-projects">Link Building</a><a href="#services-projects">WordPress &amp; Web Design</a><a href="#services-projects">Content Writing</a><a href="#services-projects">Pinterest Marketing</a><a href="#services-projects">Amazon Affiliate Marketing</a>
       </div>
       <div><h4>Explore</h4>
-        <a href="#samples">Writing Samples</a><a href="#work">Selected Work</a><a href="#process">How I Work</a><a href="#about">About Zain</a><a href="#contact">Contact</a>
+        <a href="#services-projects">Writing Samples</a><a href="#services-projects">Selected Work</a><a href="#home">How I Work</a><a href="#home">Packages</a><a href="#home">FAQ</a>
         <a href="mailto:malikzaini6788@gmail.com?subject=SEO%20Project%20Enquiry">malikzaini6788@gmail.com</a>
       </div>
     </div>
@@ -1360,22 +1494,64 @@ footer a:hover{text-decoration:underline}
   </div>
 </footer>
 
-
 <a class="wa-float" href="https://wa.me/923145623583?text=Hi%20Zain%2C%20I%20want%20to%20hire%20you%20for%20SEO%20work." target="_blank" rel="noopener" aria-label="Chat with Zain on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
 
 <script>
 (function(){
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  /* ===== Hash routing: 3 in-site pages ===== */
+  var TITLES = {
+    'home': 'Best SEO Services for Local Businesses | Zain Naseer — SEO Expert',
+    'about': 'About Us — Zain Naseer, SEO & Local Business Growth Specialist',
+    'services-projects': 'Our Services & Projects — Zain Naseer SEO'
+  };
+  var pages = {};
+  document.querySelectorAll('.page').forEach(function(p){ pages[p.getAttribute('data-page')] = p; });
+  var currentPage = null;
+
+  function setActiveNav(name){
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('data-nav') === name);
+    });
+  }
+  function showPage(name, scrollTargetId){
+    if(!pages[name]) name = 'home';
+    Object.keys(pages).forEach(function(k){ pages[k].classList.toggle('active', k === name); });
+    currentPage = name;
+    document.title = TITLES[name];
+    setActiveNav(name === 'home' && scrollTargetId === 'contact' ? 'contact' : name);
+    if(scrollTargetId){
+      var el = document.getElementById(scrollTargetId);
+      if(el){ setTimeout(function(){ el.scrollIntoView({block:'start'}); }, 30); return; }
+    }
+    window.scrollTo(0, 0);
+  }
+  function route(){
+    var h = (location.hash || '#home').replace('#','');
+    if(h === 'contact'){ showPage('home', 'contact'); return; }
+    if(h === 'samples' || h === 'work' || h === 'services'){ showPage('services-projects', h); return; }
+    if(pages[h]){ showPage(h); return; }
+    // In-page section on the current page (e.g. #process, #faq, #packages on Home)
+    var el = document.getElementById(h);
+    if(el && currentPage && pages[currentPage].contains(el)){ el.scrollIntoView({block:'start'}); return; }
+    if(el){
+      for(var k in pages){ if(pages[k].contains(el)){ showPage(k, h); return; } }
+    }
+    showPage('home');
+  }
+  window.addEventListener('hashchange', route);
+
   // Mobile menu
   var btn = document.getElementById('menuBtn'), nav = document.getElementById('mobileNav');
+  function closeMenu(){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); btn.textContent='☰'; }
   btn.addEventListener('click', function(){
     var open = nav.classList.toggle('open');
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     btn.textContent = open ? '✕' : '☰';
   });
-  nav.addEventListener('click', function(e){ if(e.target.tagName==='A'){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); btn.textContent='☰'; }});
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && nav.classList.contains('open')){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); btn.textContent='☰'; btn.focus(); }});
+  nav.addEventListener('click', function(e){ if(e.target.tagName==='A'){ closeMenu(); }});
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && nav.classList.contains('open')){ closeMenu(); btn.focus(); }});
 
   // FAQ accordion
   var items = document.querySelectorAll('.faq-item');
@@ -1388,7 +1564,7 @@ footer a:hover{text-decoration:underline}
     });
   });
 
-  // Service preselect from cards / packages
+  // Service preselect from cards / packages (links point to #contact on Home)
   var serviceSelect = document.getElementById('fService');
   document.querySelectorAll('[data-service]').forEach(function(link){
     link.addEventListener('click', function(){
@@ -1400,9 +1576,6 @@ footer a:hover{text-decoration:underline}
   });
 
   // Contact form -> FormSubmit (delivers the message to Zain's inbox).
-  // Sent via FormSubmit's AJAX endpoint so the visitor stays on the page and
-  // sees the success message; if that request fails, the form falls back to
-  // its native POST to the same FormSubmit address.
   var form = document.getElementById('contactForm');
   function setInvalid(id, bad){ document.getElementById(id).closest('.field').classList.toggle('invalid', bad); return !bad; }
   form.addEventListener('submit', function(e){
@@ -1415,9 +1588,9 @@ footer a:hover{text-decoration:underline}
     ok = setInvalid('fEmail', !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) && ok;
     ok = setInvalid('fMsg', !msg) && ok;
     if(!ok){ var firstBad = form.querySelector('.field.invalid input, .field.invalid textarea'); if(firstBad) firstBad.focus(); return; }
-    var btn = document.getElementById('submitBtn');
+    var btn2 = document.getElementById('submitBtn');
     var successBox = document.getElementById('formSuccess');
-    btn.disabled = true; btn.textContent = 'Sending…';
+    btn2.disabled = true; btn2.textContent = 'Sending…';
     fetch('https://formsubmit.co/ajax/malikzaini6788@gmail.com', {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
@@ -1426,16 +1599,15 @@ footer a:hover{text-decoration:underline}
       if(!res.ok) throw new Error('send failed');
       successBox.classList.add('show');
       form.reset();
-      btn.disabled = false; btn.textContent = 'Send My Message';
+      btn2.disabled = false; btn2.textContent = 'Send My Message';
       successBox.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }).catch(function(){
-      btn.disabled = false; btn.textContent = 'Send My Message';
+      btn2.disabled = false; btn2.textContent = 'Send My Message';
       form.submit();
     });
   });
-  // Copy email / number fallback buttons. These only copy text to the
-  // clipboard — the mailto: and wa.me links themselves are plain anchors
-  // and are never intercepted.
+
+  // Copy email / number fallback buttons (plain copy only — mailto/wa.me links are never intercepted)
   document.querySelectorAll('.copy-btn').forEach(function(b){
     b.addEventListener('click', function(){
       var text = b.getAttribute('data-copy');
@@ -1457,10 +1629,8 @@ footer a:hover{text-decoration:underline}
     });
   });
 
-  // Subtle scroll-reveal (progressive enhancement: content is visible without JS,
-  // reveals early via a large look-ahead margin, and a timed fallback plus
-  // beforeprint guarantee nothing ever stays hidden)
-  var revealEls = document.querySelectorAll('.section-head, .card, .step, .slot, .faq-item, .about-box, .checklist li, .contact-info, #contactForm, .work-note');
+  // Scroll reveal (progressive enhancement with fallbacks so nothing stays hidden)
+  var revealEls = document.querySelectorAll('.section-head, .card, .step, .slot, .faq-item, .about-box, .checklist li, .contact-info, #contactForm, .work-note, .timeline li');
   function revealAll(){ revealEls.forEach(function(el){ el.classList.add('in'); }); }
   if('IntersectionObserver' in window){
     var io = new IntersectionObserver(function(entries){
@@ -1473,6 +1643,8 @@ footer a:hover{text-decoration:underline}
   ['fName','fEmail','fMsg'].forEach(function(id){
     document.getElementById(id).addEventListener('input', function(){ this.closest('.field').classList.remove('invalid'); });
   });
+
+  route();
 })();
 </script>
 </body>
